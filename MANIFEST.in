@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include asaas_theme *.css
+recursive-include asaas_theme *.csv
+recursive-include asaas_theme *.html
+recursive-include asaas_theme *.ico
+recursive-include asaas_theme *.js
+recursive-include asaas_theme *.json
+recursive-include asaas_theme *.md
+recursive-include asaas_theme *.png
+recursive-include asaas_theme *.py
+recursive-include asaas_theme *.svg
+recursive-include asaas_theme *.txt
+recursive-exclude asaas_theme *.pyc

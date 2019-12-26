@@ -1,0 +1,156 @@
+.filter-box .filter-actions .remove-filter{
+    color: white;
+    background-color: #e53929;
+    border-color: #e53929;
+    padding: 7px;
+    margin-top: 0px;
+    text-decoration: none;
+}
+
+.frappe-rtl .filter-box .filter-actions a{
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+.filter-box .filter-actions a{
+    margin-left: 5px;
+    margin-right: 0;
+    border-radius: 7px;
+
+}
+.filter-box{
+    border-bottom: none;
+}
+.content.page-container{
+    background-color: #f8faff;
+}
+    
+.content.page-container[data-page-route*="List/"] .layout-main-section{
+    border: none;
+}
+
+.content.page-container[data-page-route*="List/"] 
+    .layout-main-section.listview-main-section > .page-form.row{
+    background-color: #f8faff;
+    border:none;
+}
+
+.content.page-container[data-page-route*="List/"] 
+    .layout-main-section.listview-main-section > .page-form.row 
+        .form-control{
+        border-radius: 7px;
+        border: 0.4px solid #d1d8dd;
+        -moz-box-shadow:    2px 2px 5px 0px #ccc;
+        -webkit-box-shadow: 2px 2px 5px 0px #ccc;
+        box-shadow:         2px 2px 5px 0px #ccc;
+    }
+
+.btn-primary{
+    background-color: #2585c7;
+    border-color: #2585c7;
+}
+
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary{
+    background-color: #1d6fa5;
+    border-color: #1d6fa5;
+
+}
+
+.filter_area{
+    background-color: white;
+    margin: 15px 0px;
+}
+
+.show_filters{
+    border-bottom: none;
+}
+.result,.no-result{
+    background-color: white;
+    -moz-box-shadow:    2px 2px 5px 0px #ccc;
+    -webkit-box-shadow: 2px 2px 5px 0px #ccc;
+    box-shadow:         2px 2px 5px 0px #ccc;
+
+}
+.list-item--head,.list-paging-area{
+    background-color: white;
+}
+.list-paging-area{
+    -moz-box-shadow:    2px 2px 5px 0px #ccc;
+    -webkit-box-shadow: 2px 2px 5px 0px #ccc;
+    box-shadow:         2px 2px 5px 0px #ccc;
+}
+
+.frappe-rtl .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle){
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
+.frappe-rtl .btn-group > .btn:last-child:not(:first-child), .btn-group > .dropdown-toggle:not(:first-child){
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+}
+.btn-default{
+    background-color: transparent;
+    color:#a9cee8;
+    border-color:lightgrey;
+}
+.btn-default.btn-more,.btn-default.btn-more:active{
+    background-color: #2585c7;
+    color:white;
+    border-color:#2585c7;
+    font-weight: 800;
+    border-radius: 10px;
+}
+.btn-info{
+    background-color: transparent;
+    color: #408fcc;
+    border-color:lightgrey;
+
+}
+
+.btn-info:hover, .btn-info:focus, .btn-info.focus, .btn-info:active, .btn-info.active, .open > .dropdown-toggle.btn-info{
+    color: #408fcc;
+    background-color: transparent;
+    border-color:lightgrey;
+
+}
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default{
+    color: #408fcc;
+    background-color: transparent;
+    border-color:lightgrey;
+}
+
+span.indicator.filterable{
+    background-color: #f8fafb;
+    padding: 5px 10px;
+    width: 85%;
+    border-radius: 50px;
+    font-size: 14px;
+}
+span.indicator.filterable:hover{
+    background-color:#edf2f5;
+}
+
+.frappe-rtl .indicator::before, .indicator-right::after{
+    float: left;
+    height: 10px;
+    width: 10px;
+    margin-top:5px;
+
+}
+
+span .indicator.green::before, .indicator-right.green::after{
+    float: right;
+    height: 12px;
+    width: 12px;
+    margin-top:4px;
+}
+
+input.frappe-control{
+    border-radius: 7px;
+}
+
+
+.filter_area .form-control{
+    color:#a6b2b2;
+}

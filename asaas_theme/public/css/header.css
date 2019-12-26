@@ -1,0 +1,49 @@
+.page-head{
+    background: rgb(22,111,174);
+    background: -moz-linear-gradient(90deg, rgba(22,111,174,1) 0%, rgba(30,123,187,1) 50%, rgba(37,133,199,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(22,111,174,1) 0%, rgba(30,123,187,1) 50%, rgba(37,133,199,1) 100%);
+    background: linear-gradient(90deg, rgba(22,111,174,1) 0%, rgba(30,123,187,1) 50%, rgba(37,133,199,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#166fae",endColorstr="#2585c7",GradientType=1);
+    height: 50px;
+}
+.page-title h1{
+    margin-top: 6px;
+    color: white;
+}
+#navbar-breadcrumbs a{
+    color: white;
+}
+#navbar-breadcrumbs > li > a{
+    max-width: fit-content;
+}
+
+
+.navbar-default{
+    background-color: white;
+    border-color: white;
+}
+
+#navbar-search{
+    border-radius: 13px;
+    background-color: #eef5fa;
+    border-color: #eef5fa;
+}
+
+.frappe-rtl #navbar-search{
+    padding-right: 40px;
+}
+.frappe-rtl .navbar .navbar-search-icon{
+    right: 10px;
+    left: unset;
+    position: absolute;
+    top: 5px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.navbar-form .form-group{
+    position: relative;
+}
+.frappe-rtl .navbar-form[role="search"]{
+    float: right!important;
+}
