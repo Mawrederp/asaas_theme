@@ -1,0 +1,54 @@
+body{
+    background-color: #f8faff!important;    
+}
+#page-desktop{
+    background-color: #f8faff!important;
+    overflow: unset;
+}
+
+
+.content.page-container[id="page-desktop"] > div:first-child{
+    height: fit-content;
+    padding-top: calc(100px + 3%)!important;
+}
+
+.content.page-container[id="page-desktop"] #icon-grid{
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    display: inline-table;
+    display: -moz-inline-table;
+    display: -ms-inline-table;
+    margin-bottom: 30px;
+
+}
+
+.app-icon i{
+    color: #f79c42!important;
+    border:2px solid #f79c42;
+    border-radius: 50px;
+    padding: 15px;
+    min-width:62px;
+}
+.app-icon{
+    background-color: white!important;
+    border-radius:10px;
+}
+.case-wrapper{
+    width: 112px;
+    margin-bottom: 15px;
+}
+
+#icon-grid{
+    padding: 30px;
+}
+
+.case-label{
+    color: #2d6482;
+    text-shadow:none;
+    font-size: 14px;
+}
+
+body[data-route=""] .navbar-default, body[data-route="desktop"] .navbar-default{
+    background-color: rgba(255, 255, 255,1);
+}
