@@ -358,9 +358,14 @@ frappe.ui.Page = Class.extend({
 			let response = action();
 			me.btn_disable_enable(btn, response);
 		};
+		
+		let item_class = ["green","orange","grey","yellow"];
+		let item_id = me.inner_toolbar.children().length;
+
 		if(group) {
 			var $group = this.get_or_add_inner_group_button(group);
-			$(this.inner_toolbar).removeClass("hide");
+			$group.find('button').addClass(item_class[$group.index() % 4]);
+
 
 			if (!this.is_in_group_button_dropdown($group.find(".dropdown-menu"), 'li', label)) {
 				return $('<li><a>'+label+'</a></li>')
@@ -369,7 +374,7 @@ frappe.ui.Page = Class.extend({
 			}
 
 		} else {
-			return $('<button class="btn btn-default btn-xs" style="margin-left: 10px;">'+__(label)+'</btn>')
+			return $(`<button class="btn btn-default btn-xs ${item_class[item_id % 4]}" style="margin-left: 10px;">${__(label)}</btn>`)
 				.on("click", _action)
 				.appendTo(this.inner_toolbar.removeClass("hide"));
 		}

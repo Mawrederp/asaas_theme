@@ -52,3 +52,11 @@ body{
 body[data-route=""] .navbar-default, body[data-route="desktop"] .navbar-default{
     background-color: rgba(255, 255, 255,1);
 }
+
+.page-title .title-text{
+    margin-right: 40px;
+}
+
+.page-title .title-text:before{
+    display: none;
+}

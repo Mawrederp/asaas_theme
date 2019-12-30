@@ -101,7 +101,12 @@
     -moz-box-shadow:    2px 2px 5px 0px #ccc;
     -webkit-box-shadow: 2px 2px 5px 0px #ccc;
     box-shadow:         2px 2px 5px 0px #ccc;
-
+}
+.modal-body .result,.modal-body .no-result{
+    -moz-box-shadow:    none;
+    -webkit-box-shadow: none;
+    box-shadow:         none;
+    background-color: transparent;
 }
 .list-item--head,.list-paging-area{
     background-color: white;
@@ -121,11 +126,17 @@
     border-bottom-left-radius:10px;
 }
 .btn-default{
-    background-color: transparent;
+    background-color: white;
+    border-color: white;
     color:#a9cee8;
     border-color:lightgrey;
-    font-size: 16px;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 15px;
     border-radius: 8px;
+    -moz-box-shadow:    2px 2px 5px 0px #ccc;
+    -webkit-box-shadow: 2px 2px 5px 0px #ccc;
+    box-shadow:         2px 2px 5px 0px #ccc;
 }
 .btn-default.btn-more,.btn-default.btn-more:active{
     background-color: #2585c7;
@@ -338,7 +349,50 @@ body[data-route*="Form/"] .layout-main-section{
     background-color: #4d6564;
 }
 
+.orange{
+    color: #f68f35;
+}
 
+.green{
+    color: #56b85b;
+}
+
+.yellow{
+    color: #f9be3c;
+}
+
+.grey{
+    color: #4d6564;
+}
+
+
+.btn-default.orange:hover,.btn-default.orange:focus,
+.btn-default.orange:active, .btn-default.orange.active, 
+.open > .dropdown-toggle.btn-default.orange{
+    background-color: #f79c42;
+    color: white;
+}
+
+.btn-default.green:hover,.btn-default.green:focus,
+.btn-default.green:active, .btn-default.green.active, 
+.open > .dropdown-toggle.btn-default.green{
+    background-color:#56b85b ;
+    color: white;
+}
+
+.btn-default.yellow:hover,.btn-default.yellow:focus,
+.btn-default.yellow:active, .btn-default.yellow.active, 
+.open > .dropdown-toggle.btn-default.yellow{
+    background-color: #f9be3c;
+    color: white;
+}
+
+.btn-default.grey:hover,.btn-default.grey:focus,
+.btn-default.grey:active, .btn-default.grey.active, 
+.open > .dropdown-toggle.btn-default.grey{
+    background-color:#4d6564 ;
+    color: white;
+}
 
 .form-links.form-dashboard-section .document-link{
     position: relative;
