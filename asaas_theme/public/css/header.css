@@ -32,6 +32,19 @@
 .frappe-rtl #navbar-search{
     padding-right: 40px;
 }
+
+#navbar-search{
+    padding-left: 40px;
+}
+
+.navbar .navbar-search-icon{
+    left: 0;
+    right: unset;
+    position: absolute;
+    top: 12px;
+    font-size: 15px;
+    font-weight: 500;
+}
 .frappe-rtl .navbar .navbar-search-icon{
     right: 10px;
     left: unset;
@@ -41,6 +54,19 @@
     font-weight: 500;
 }
 
+
+.form-print-wrapper{
+    margin-left: calc(18vw - 73px);
+    margin-right: 0;
+}
+
+.frappe-rtl .form-print-wrapper{
+    margin-right: calc(18vw - 73px);
+    margin-left: 0;
+}
+.navbar-form{
+    float: left!important;
+}
 .navbar-form .form-group{
     position: relative;
 }

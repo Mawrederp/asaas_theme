@@ -307,10 +307,13 @@ body[data-route*="Form/"] .layout-main-section{
 
 .layout-other-section .page-actions .btn-group.menu-btn-group{
     top: 10px;
-    left: 14px;
+    left: 0;
     right: unset;
 }
 
+.row.layout-main{
+    width: 100%;
+}
 .frappe-rtl .layout-other-section .page-actions .btn-group.menu-btn-group{
     left: unset;
     right: 14px;
@@ -535,7 +538,8 @@ input[type="checkbox"]{
     position: fixed;
     height: 100%;
     width: 18vw;
-    right: 0;
+    left: 0;
+    right: auto;
     z-index: 1;
     background: rgb(27,125,175);
     background: -moz-linear-gradient(180deg, rgba(27,125,175,1) 0%, rgba(24,106,147,1) 50%, rgba(25,90,122,1) 100%);
@@ -544,21 +548,33 @@ input[type="checkbox"]{
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1b7daf",endColorstr="#195a7a",GradientType=1);
 
 }
+.frappe-rtl #primary-sidebar{
+    left: auto;
+    right: 0;
+}
 
 .splash img{
-    background-color: lightgray;
+    background-color: #e1e4ec;
     min-width: 500px;
     z-index: 99999;
     margin: auto;
+    border-radius: 50px;
 }
 
 .page-head{
     width: calc(82vw - 15px);
+    right: 0;
+    left: auto;
+}
+.frappe-rtl .page-head{
     left: 0;
     right: auto;
 }
-
 header .navbar{
+    left: auto;
+    right: 0;
+}
+.frappe-rtl header .navbar{
     left: 0;
     right: auto;
 }
