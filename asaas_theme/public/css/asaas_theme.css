@@ -310,7 +310,9 @@ body[data-route*="Form/"] .layout-main-section{
     left: 0;
     right: unset;
 }
-
+.navbar-form{
+    float: left;
+}
 .row.layout-main{
     width: 100%;
 }
@@ -615,6 +617,11 @@ header .navbar .container{
     background-color: transparent;
 }
 
+.profile-image .avatar-small .standard-image{
+    font-size: 70px;
+    background-color: transparent;
+    border: none;
+}
 .user-info{
     text-align: center;
     color: #eef5fa;
@@ -660,3 +667,4 @@ header .navbar .form-group-sm .form-control{
 input[id="navbar-search"] + ul{
     top: 38px;
 }
+

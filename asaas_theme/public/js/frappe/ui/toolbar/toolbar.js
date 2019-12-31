@@ -29,8 +29,12 @@ frappe.ui.toolbar.Toolbar = Class.extend({
 		profile_image.html(frappe.avatar());
 
 		user_info.html('');
-		user_info.append(`<h4 id="user-fullname">${__(frappe.user_info().fullname)}</h4>`)
-		user_info.append(`<h4 id="user-department">${__(department)}</h4>`)
+		if(frappe_user_info.fullname){
+			user_info.append(`<h4 id="user-fullname">${__(frappe_user_info.fullname)}</h4>`)
+		}
+		if(department){
+			user_info.append(`<h4 id="user-department">${__(department)}</h4>`)
+		}
 
 
 
