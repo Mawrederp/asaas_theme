@@ -619,8 +619,11 @@ header .navbar .container{
 
 .profile-image .avatar-small .standard-image{
     font-size: 70px;
-    background-color: transparent;
+    background-color: transparent!important;
     border: none;
+}
+.profile-image:hover{
+    border:1px solid #eef5fa;
 }
 .user-info{
     text-align: center;
