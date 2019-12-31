@@ -57,6 +57,29 @@ body[data-route=""] .navbar-default, body[data-route="desktop"] .navbar-default{
     margin-right: 40px;
 }
 
-.page-title .title-text:before{
+body[data-route=""] .page-title .title-text:before{
     display: none;
 }
+.desk-page-head{
+    display: none;
+}
+body[data-route=""] .desk-page-head{
+    display: block;
+}
+
+body[data-route=""] .content.page-container > div{
+    display: table;
+    margin-left:24vw;
+    margin-right: 0;
+}
+
+
+ body[data-route=""].frappe-rtl .content.page-container > div{
+    display: table;
+    margin-right:24vw;
+    margin-left: 0;
+}
+/* 
+body[data-route=""] header .navbar > .container,.page-head{
+    width: 76vw;
+} */

@@ -98,3 +98,72 @@ p {
 	font-size: 14px;
 	margin-top: 45px;
 }
+
+header{
+	display: none;
+}
+
+.web-footer{
+	display: none;
+}
+
+.page-card{
+	border-radius: 10px;
+}
+
+.page-card .page-card-head{
+	text-align: center;
+	border-bottom:none;
+}
+.form-control,.btn,.btn-sm,.btn-group-sm > .btn{
+	border-radius: 15px;
+	color: white;
+	min-height: 40px;
+}
+.login-content .btn,.page-card .btn{
+	margin-top: 0;
+}
+.btn,.btn-sm,.btn-group-sm > .btn{
+	background-color: #165777;
+	border-color: #165777;
+}
+.btn:hover,.btn-sm:hover,.btn-group-sm > .btn:hover,
+.btn:focus,.btn-sm:focus,.btn-group-sm > .btn:focus{
+	background-color: #00a0d1;
+	border-color: #00a0d1;
+}
+
+.hero-and-content{
+	background-color: transparent;
+}
+body{
+	background: rgb(22,87,119);
+	background: -moz-linear-gradient(180deg, rgba(22,87,119,1) 0%, rgba(96,140,162,1) 50%, rgba(248,249,249,1) 100%);
+	background: -webkit-linear-gradient(180deg, rgba(22,87,119,1) 0%, rgba(96,140,162,1) 50%, rgba(248,249,249,1) 100%);
+	background: linear-gradient(180deg, rgba(22,87,119,1) 0%, rgba(96,140,162,1) 50%, rgba(248,249,249,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#165777",endColorstr="#f8f9f9",GradientType=1);
+
+}
+
+.form-footer{
+	margin: auto;
+	margin-top: 20px;
+	max-width: 360px;
+	background-color: white;
+}
+
+a[href="#forgot"]{
+	text-decoration: underline;
+}
+
+.page_content{
+	max-width: 360px;
+	margin-top: 25vh;
+}
+
+#page-title{
+	color: white;
+	width: 680px;
+	text-align: center;
+	direction: rtl;
+}

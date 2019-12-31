@@ -19,6 +19,12 @@ app_include_css = ["/assets/asaas_theme/css/asaas_theme.css",
                     "/assets/asaas_theme/css/header.css"]
 app_include_js = "/assets/asaas_theme/js/page.js"
 
+website_context = {
+	"favicon": 	"/assets/asaas_theme/images/favicon.ico",
+	"splash_image": "/assets/asaas_theme/images/logo.png"
+}
+
+boot_session = "asaas_theme.startup.boot.boot_session"
 # include js, css files in header of web template
 # web_include_css = "/assets/asaas_theme/css/asaas_theme.css"
 # web_include_js = "/assets/asaas_theme/js/asaas_theme.js"

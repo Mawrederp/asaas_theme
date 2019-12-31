@@ -26,14 +26,41 @@
 </head>
 
 <body>
-	<div class="centered splash" style="width: 100px; height: 100px;">
+	<div class="centered splash" >
 		<img src="{{ splash_image or "/assets/frappe/images/frappe-bird-thin.svg" }}">
 	</div>
+	<div id="primary-sidebar">
+		<div class="logo">
+			<a href="/desk#">
+				<img src="/assets/asaas_theme/images/logo.png" alt="">
+			</a>
+		</div>
+		<div class="profile-image">
+			
+		</div>
+
+		<div class="user-info">
+			<h4 id="user-fullname">عبد العزيز القحطاني</h4>
+			<h4 id="user-department">الإدارة العامة</h4>
+		</div>
+
+		<div class="sidebar-modules">
+			<div class="sidebar-module">
+				<h5 class="module-title">
+					<span>
+						<i class="octicon octicon-heart"></i>
+					</span>
+					لوحة التحكم</h5>
+			</div>
+		</div>
+
+	</div>
+
 	<div class="main-section">
 		<header></header>
 		
 		<div id="body_div">
-				<div class="page-head">
+				<div class="desk-page-head page-head">
 						<div class="container">
 							<div class="row">
 								<div class="col-md-7 col-sm-8 col-xs-6 page-title">
@@ -49,7 +76,6 @@
 		</div>
 		<footer></footer>
 	</div>
-
 	<!-- hack! load background image asap, before desktop is rendered -->
 	{% if background_image %}
 	<img src="{{ background_image }}" style="height: 1px; width: 1px; margin-bottom: -1px;">

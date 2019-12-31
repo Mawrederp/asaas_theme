@@ -8,7 +8,7 @@ frappe.ui.Page = frappe.ui.Page.extend({
 						<div class="layout-main-section"></div>\
 						<div class="layout-footer hide"></div>\
                     </div>\
-					<div class="col-md-2 layout-other-section"></div>\
+					<div class="col-md-2 layout-other-section">\
 					
 
 					<div class="text-right page-actions">
@@ -45,7 +45,7 @@ frappe.ui.Page = frappe.ui.Page.extend({
 						</ul>
 					</div>
 				</div>
-
+				</div>
 					
 				</div>`);
 		} else {
