@@ -126,6 +126,9 @@ header{
 	color: white;
 	min-height: 40px;
 }
+.form-control{
+	color: black
+}
 .login-content .btn,.page-card .btn{
 	margin-top: 0;
 }
