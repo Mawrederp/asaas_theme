@@ -34,6 +34,17 @@ body{
 .app-icon{
     background-color: white!important;
     border-radius:10px;
+    min-width: 106px;
+    min-height: 106px;
+}
+.app-icon .inner{
+    font-size: 70px;
+    margin-top: 10px;
+    color: #f79c42;
+}
+.app-icon .inner:hover{
+    color: white;
+    
 }
 .case-wrapper{
     width: 112px;

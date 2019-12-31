@@ -530,7 +530,7 @@ input[type="checkbox"]{
     background-color: #f79c42!important;
 }
 
-.case-wrapper:hover .app-icon i{
+.case-wrapper:hover .app-icon i,.case-wrapper:hover .app-icon span{
     color: white!important;
     border: 2px solid white;
 }
