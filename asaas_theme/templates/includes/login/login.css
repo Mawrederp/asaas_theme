@@ -3,6 +3,7 @@
 .hero-and-content {
 	/*background-color: #f5f7fa;*/
 	background-color: #fafbfc;
+	position: relative;
 }
 
 .page-sidebar, #wrap-footer, .page-header {
@@ -49,11 +50,14 @@
   position: relative;
   height: auto;
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+	-moz-box-sizing: border-box;
+		box-sizing: border-box;
   padding: 6px;
   font-size: 14px;
   margin-bottom: 10px;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 .form-signin .form-control:focus {
   z-index: 2;
@@ -109,6 +113,8 @@ header{
 
 .page-card{
 	border-radius: 10px;
+	min-width: 430px;
+	padding: 20px 50px;
 }
 
 .page-card .page-card-head{
@@ -116,7 +122,7 @@ header{
 	border-bottom:none;
 }
 .form-control,.btn,.btn-sm,.btn-group-sm > .btn{
-	border-radius: 15px;
+	border-radius: 20px;
 	color: white;
 	min-height: 40px;
 }
@@ -157,13 +163,50 @@ a[href="#forgot"]{
 }
 
 .page_content{
-	max-width: 360px;
-	margin-top: 25vh;
+	max-width: 50%;
+	margin-top: 5vh;
 }
 
 #page-title{
 	color: white;
-	width: 680px;
+	width: 100%;
 	text-align: center;
 	direction: rtl;
+}
+.login-background{
+	position: absolute;
+	width: 50%;
+	right: 0;
+	top: 8%;
+}
+
+#logo{
+	max-width: 250px;
+	margin: auto;
+	display: block;
+}
+
+html{
+	height: 100%;
+}
+@media (max-width: 991px) and (min-width: 768px){
+	.login-background{
+		position: initial;
+		width: 100%;
+	}
+	
+	.page_content{
+		margin:auto;
+	}
+	#page-title{
+		width: 520px;
+	}
+}
+
+.indicator::before, .indicator-right::after{
+	display: none;
+}
+
+.page-card .page-card-head .indicator{
+	font-size: 25px;
 }
