@@ -635,3 +635,12 @@ header .navbar .container{
 .frappe-rtl .sidebar-module .module-title span{
     float: right;
 }
+
+header .navbar .form-group-sm .form-control{
+    height: 40px;
+}
+
+
+input[id="navbar-search"] + ul{
+    top: 38px;
+}

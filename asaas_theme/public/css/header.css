@@ -36,8 +36,8 @@
     right: 10px;
     left: unset;
     position: absolute;
-    top: 5px;
-    font-size: 17px;
+    top: 12px;
+    font-size: 15px;
     font-weight: 500;
 }
 
@@ -46,4 +46,12 @@
 }
 .frappe-rtl .navbar-form[role="search"]{
     float: right!important;
+}
+
+#navbar-search{
+    width: 70%;
+}
+
+.octicon-search-save:before, .octicon-search:before{
+    font-weight: bolder;
 }
