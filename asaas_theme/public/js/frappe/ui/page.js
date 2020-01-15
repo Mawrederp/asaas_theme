@@ -77,8 +77,8 @@ frappe.ui.Page = Class.extend({
 				</div>');
 		} else {
 			this.add_view("main", '<div class="row layout-main">\
-				<div class="col-md-2 layout-side-section"></div>\
-				<div class="col-md-8 layout-main-section-wrapper">\
+				\
+				<div class="col-md-9 layout-main-section-wrapper">\
 					<div class="layout-main-section"></div>\
 					<div class="layout-footer hide"></div>\
 				</div>\

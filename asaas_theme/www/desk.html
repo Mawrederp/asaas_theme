@@ -29,46 +29,51 @@
 	<div class="centered splash" >
 		<img src="{{ splash_image or "/assets/frappe/images/frappe-bird-thin.svg" }}">
 	</div>
-	<div id="primary-sidebar">
-		<div class="logo">
-			<a href="/desk#">
-				<img src="/assets/asaas_theme/images/logo.png" alt="">
-			</a>
-		</div>
-		<div class="profile-image">
-			
-		</div>
-
-		<div class="user-info">
-			<h4 id="user-fullname"></h4>
-			<h4 id="user-department"></h4>
-		</div>
-
-		<div class="sidebar-modules">
-			
-		</div>
-
-	</div>
+	
 
 	<div class="main-section">
-		<header></header>
+		<div class="col-md-2 col-sm-2">
+			<div id="primary-sidebar">
+				<div class="logo">
+					<a href="/desk#">
+						<img src="/assets/asaas_theme/images/logo.png" alt="">
+					</a>
+				</div>
+				<div class="profile-image">
+					
+				</div>
 		
-		<div id="body_div">
-				<div class="desk-page-head page-head">
-						<div class="container">
-							<div class="row">
-								<div class="col-md-7 col-sm-8 col-xs-6 page-title">
-									<ul class="nav navbar-nav" id="navbar-breadcrumbs"> </ul>
-									<h1>
-										<div class="title-image hide hidden-md hidden-lg"> </div>
-										<div class="ellipsis title-text">{{_('Main Sections') }}</div> <span class="indicator hide"></span>
-									</h1>
+				<div class="user-info">
+					<h4 id="user-fullname"></h4>
+					<h4 id="user-department"></h4>
+				</div>
+		
+				<div class="sidebar-modules">
+					
+				</div>
+		
+			</div>
+		</div>
+		<div class="col-md-10 col-sm-10">
+			<header></header>
+			
+			<div id="body_div">
+					<div class="desk-page-head page-head">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-7 col-sm-8 col-xs-6 page-title">
+										<ul class="nav navbar-nav" id="navbar-breadcrumbs"> </ul>
+										<h1>
+											<div class="title-image hide hidden-md hidden-lg"> </div>
+											<div class="ellipsis title-text">{{_('Main Sections') }}</div> <span class="indicator hide"></span>
+										</h1>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
+			</div>
+			<footer></footer>
 		</div>
-		<footer></footer>
 	</div>
 	<!-- hack! load background image asap, before desktop is rendered -->
 	{% if background_image %}

@@ -214,6 +214,7 @@ input.form-control{
 .control-label{
     padding-left: 10px!important;
 }
+
 .row.form-section{
     margin: 35px 0;
     background-color: white;
@@ -222,7 +223,9 @@ input.form-control{
     -webkit-box-shadow: 2px 2px 5px 0px #ccc;
     box-shadow:         2px 2px 5px 0px #ccc;
 }
-
+.row.form-section:first-child{
+    margin: 0;
+}
 .modal-content .row.form-section, .grid-form-body .row.form-section{
     margin: 0;
     border:none;
@@ -303,6 +306,7 @@ body[data-route*="Form/"] .layout-main-section{
     z-index: 0;
     position: initial;
     border-radius: 0;
+    min-width: 100%;
 }
 
 .layout-other-section .page-actions .btn-group.menu-btn-group{
@@ -322,7 +326,7 @@ body[data-route*="Form/"] .layout-main-section{
 }
 .layout-other-section .page-actions ul.dropdown-menu li:not(:empty){
     border-radius: 8px;
-    margin: 15px 30px;
+    margin: 15px 35px;
 }
 .layout-other-section .page-actions ul.dropdown-menu > li >a:hover,
 .layout-other-section .page-actions ul.dropdown-menu > li > a:focus{
@@ -333,9 +337,10 @@ body[data-route*="Form/"] .layout-main-section{
 
 .layout-other-section .page-actions ul.dropdown-menu li a{
     color: white;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bold;
-    padding: 14px 17px;
+    padding: 13px 5px;
+    text-align: center;
 }
 
 .orange-menu-item{
@@ -582,11 +587,10 @@ header .navbar{
 }
 header .navbar .container{
     width: calc(82vw - 15px);
+    padding-left: 60px;
 }
 
-.layout-side-section{
-    visibility: hidden;
-}
+
 
 #primary-sidebar{
     overflow-y: scroll;
@@ -663,7 +667,7 @@ header .navbar .container{
 }
 
 header .navbar .form-group-sm .form-control{
-    height: 40px;
+    height: 35px;
 }
 
 
@@ -671,3 +675,34 @@ input[id="navbar-search"] + ul{
     top: 38px;
 }
 
+
+.frappe-rtl .listview-main-section .page-form .octicon-search{
+    margin-left: 7px;
+}
+
+.list_filter{
+    padding: 0 20px;
+}
+
+#navbar-search{
+    border-radius: 20px!important;
+}
+
+.frappe-rtl .navbar .navbar-search-icon{
+    top: 10px;
+}
+.navbar .navbar-search-icon{
+    top: 10px;
+
+}
+
+.sidebar-image-wrapper{
+    display: none;
+}
+
+.page-title .title-text:before{
+    color: white!important;
+}
+.sort-selector .dropdown{
+    margin-top:5px;
+}
