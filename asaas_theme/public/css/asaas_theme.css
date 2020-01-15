@@ -306,7 +306,7 @@ body[data-route*="Form/"] .layout-main-section{
     z-index: 0;
     position: initial;
     border-radius: 0;
-    min-width: 100%;
+    min-width: fit-content;
 }
 
 .layout-other-section .page-actions .btn-group.menu-btn-group{
@@ -326,7 +326,7 @@ body[data-route*="Form/"] .layout-main-section{
 }
 .layout-other-section .page-actions ul.dropdown-menu li:not(:empty){
     border-radius: 8px;
-    margin: 15px 35px;
+    margin: 15px 30px;
 }
 .layout-other-section .page-actions ul.dropdown-menu > li >a:hover,
 .layout-other-section .page-actions ul.dropdown-menu > li > a:focus{

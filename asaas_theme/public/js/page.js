@@ -67,7 +67,7 @@ frappe.ui.Page = frappe.ui.Page.extend({
 						<div class="layout-main-section"></div>\
 						<div class="layout-footer hide"></div>\
                     </div>\
-					<div class="col-md-2 layout-other-section">\
+					<div class="col-md-3 layout-other-section">\
 					
 
 					<div class="text-right page-actions">
@@ -114,7 +114,7 @@ frappe.ui.Page = frappe.ui.Page.extend({
 					<div class="layout-main-section"></div>\
 					<div class="layout-footer hide"></div>\
                 </div>\
-				<div class="col-md-2 layout-other-section">
+				<div class="col-md-3 layout-other-section">
 				<div class="text-right page-actions">
     <!-- ID and icon buttons -->
     <span class="checked-items-status text-ellipsis text-muted small hide hidden-xs hidden-sm"

@@ -260,7 +260,7 @@ frappe.ui.Page = Class.extend({
 
 		parent.parent().removeClass("hide");
 		let item_class = ["orange","green","yellow","grey"];
-		let item_id = parent.find('li a.grey-link').length;
+		let item_id = parent.find('li a.grey-link:not(.visible-xs)').length;
 		
 		var $li = $('<li><a class="grey-link">'+ label +'</a><li>'),
 			$link = $li.find("a").on("click", click);
