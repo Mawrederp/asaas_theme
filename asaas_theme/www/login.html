@@ -6,112 +6,119 @@
 </style>
 {% endblock %}
 
-{% block page_content %}
+{% block content %}
 <!-- {{ for_test }} -->
-<div class="login-background visible-md visible-lg visible-sm">
-	<img id="logo" src="assets/asaas_theme/images/logo.png" alt="">	
-	<img id="background" src="assets/asaas_theme/images/layer.png" alt="">
+
+
+<div class="col-md-6 col-sm-12 background-container">
+	<div class="login-background visible-md visible-lg visible-sm">
+		<img id="logo" src="assets/asaas_theme/images/logo.png" alt="">	
+		<img id="background" src="assets/asaas_theme/images/layer.png" alt="">
+	</div>
 </div>
-<h5 id="page-title">
-	هو نظام مالي واداري خاص بالمؤسسات بكل أقسامها وتحويلها من الانظمة الورقية الى الانظمة الالكترونية في كل التعاملات كما يسهل النظام التواصل مع المستفيدين والتعامل معهم، نظام إدارة المؤسسات هو أحد منتجات شركة إكسا السعودية.
-</h5>
-<section class='for-login'>
-	<div class="login-content page-card" style="margin-top: 30px;">
-		<form class="form-signin form-login" role="form">
-			<div class="page-card-head">
-				<span class="indicator blue" data-text="{{ _("تسجيل الدخول") }}"></span>
-			</div>
-
-			<input type="text" id="login_email"
-				class="form-control" placeholder="{{ login_name_placeholder  }}"
-				required autofocus>
-
-
-			<input type="password" id="login_password"
-				class="form-control" placeholder="{{ _('Password') }}" required>
-
-			<button class="btn btn-sm btn-primary btn-block btn-login" type="submit">
-				{{ _("تسجيل الدخول") }}</button>
-
-			{% if ldap_settings.enabled %}
-			<button class="btn btn-sm btn-default btn-block btn-login btn-ldap-login">
-				{{ _("Login with LDAP") }}</button>
-			{% endif %}
-		</form>
-		<div class='form-footer'>
-	
-				<div class='social-logins'>
-				{%- if social_login -%}
-					<h6>{{ _("Or login with") }}</h6>
-	
-					<p class="text-right" style="margin-top: 15px">
-					{%- if facebook_login is defined %}
-					<a href="{{ facebook_login }}"
-						class="btn btn-default btn-xs btn-social btn-facebook">
-						<i class="fa fa-facebook-official"></i> {{ _("Facebook") }}</a>
-					{%- endif -%}
-	
-					{%- if google_login is defined %}
-					<a href="{{ google_login }}" class="btn btn-default btn-xs btn-social btn-google">
-						<i class="fa fa-google-plus"></i> {{ _("Google") }}</a>
-					{%- endif -%}
-	
-					{%- if github_login is defined %}
-					<a href="{{ github_login }}" class="btn btn-default btn-xs btn-social btn-github">
-						<i class="fa fa-github"></i> {{ _("GitHub") }}</a>
-					{%- endif -%}
-	
-					{%- if frappe_login is defined %}
-					<a href="{{ frappe_login }}" class="btn btn-default btn-xs btn-social">
-						<img style='width: 16px; height: 16px;'
-							src="/assets/frappe/images/favicon.png"> {{ _("Frappe") }}</a>
-					{%- endif -%}
-					</p>
-				{%- endif -%}
+<div class="col-md-6 col-sm-12 form-container">
+	<h5 id="page-title">
+		هو نظام مالي واداري خاص بالمؤسسات بكل أقسامها وتحويلها من الانظمة الورقية الى الانظمة الالكترونية في كل التعاملات كما يسهل النظام التواصل مع المستفيدين والتعامل معهم، نظام إدارة المؤسسات هو أحد منتجات شركة إكسا السعودية.
+	</h5>
+	<section class='for-login'>
+		<div class="login-content page-card" style="margin-top: 30px;">
+			<form class="form-signin form-login" role="form">
+				<div class="page-card-head">
+					<span class="indicator blue" data-text="{{ _("تسجيل الدخول") }}"></span>
 				</div>
 	
-		{%- if not disable_signup -%}
+				<input type="text" id="login_email"
+					class="form-control" placeholder="{{ login_name_placeholder  }}"
+					required autofocus>
+	
+	
+				<input type="password" id="login_password"
+					class="form-control" placeholder="{{ _('Password') }}" required>
+	
+				<button class="btn btn-sm btn-primary btn-block btn-login" type="submit">
+					{{ _("تسجيل الدخول") }}</button>
+	
+				{% if ldap_settings.enabled %}
+				<button class="btn btn-sm btn-default btn-block btn-login btn-ldap-login">
+					{{ _("Login with LDAP") }}</button>
+				{% endif %}
+			</form>
+			<div class='form-footer'>
+		
+					<div class='social-logins'>
+					{%- if social_login -%}
+						<h6>{{ _("Or login with") }}</h6>
+		
+						<p class="text-right" style="margin-top: 15px">
+						{%- if facebook_login is defined %}
+						<a href="{{ facebook_login }}"
+							class="btn btn-default btn-xs btn-social btn-facebook">
+							<i class="fa fa-facebook-official"></i> {{ _("Facebook") }}</a>
+						{%- endif -%}
+		
+						{%- if google_login is defined %}
+						<a href="{{ google_login }}" class="btn btn-default btn-xs btn-social btn-google">
+							<i class="fa fa-google-plus"></i> {{ _("Google") }}</a>
+						{%- endif -%}
+		
+						{%- if github_login is defined %}
+						<a href="{{ github_login }}" class="btn btn-default btn-xs btn-social btn-github">
+							<i class="fa fa-github"></i> {{ _("GitHub") }}</a>
+						{%- endif -%}
+		
+						{%- if frappe_login is defined %}
+						<a href="{{ frappe_login }}" class="btn btn-default btn-xs btn-social">
+							<img style='width: 16px; height: 16px;'
+								src="/assets/frappe/images/favicon.png"> {{ _("Frappe") }}</a>
+						{%- endif -%}
+						</p>
+					{%- endif -%}
+					</div>
+		
+			{%- if not disable_signup -%}
+				<p class="text-right">
+					<a href="#signup" style="margin-top: -2px;">{{ _("لا تمتلك حساب؟ أنشئ حساب جديد") }}</a>
+				</p>
+			{%- endif -%}
 			<p class="text-right">
-				<a href="#signup" style="margin-top: -2px;">{{ _("لا تمتلك حساب؟ أنشئ حساب جديد") }}</a>
-			</p>
-		{%- endif -%}
-		<p class="text-right">
-			<a href="#forgot">{{ _("نسيت كلمة المرور ؟") }}</a></p>
+				<a href="#forgot">{{ _("نسيت كلمة المرور ؟") }}</a></p>
+			</div>
 		</div>
-	</div>
-</section>
-<section class='for-signup'>
-	<div class="login-content page-card" style="margin-top: 20px;">
-	<form class="form-signin form-signup hide" role="form">
-		<div class="page-card-head">
-			<span class="indicator blue" data-text="{{ _("إنشاء حساب") }}"></span>
+	</section>
+	<section class='for-signup'>
+		<div class="login-content page-card" style="margin-top: 20px;">
+		<form class="form-signin form-signup hide" role="form">
+			<div class="page-card-head">
+				<span class="indicator blue" data-text="{{ _("إنشاء حساب") }}"></span>
+			</div>
+			<input type="text" id="signup_fullname"
+				class="form-control" placeholder="{{ _('Full Name') }}" required autofocus>
+			<input type="email" id="signup_email"
+				class="form-control" placeholder="{{ _('Email address') }}" required>
+			<button class="btn btn-sm btn-primary btn-block btn-signup" type="submit">{{ _("إنشاء حساب") }}</button>
+		</form>
+		<div class='form-footer'>
+			<a href="#login" class="blue">{{ _("تمتلك حساباً ؟ تسجيل الدخول") }}</a>
 		</div>
-		<input type="text" id="signup_fullname"
-			class="form-control" placeholder="{{ _('Full Name') }}" required autofocus>
-		<input type="email" id="signup_email"
-			class="form-control" placeholder="{{ _('Email address') }}" required>
-		<button class="btn btn-sm btn-primary btn-block btn-signup" type="submit">{{ _("إنشاء حساب") }}</button>
-	</form>
-	<div class='form-footer'>
-		<a href="#login" class="blue">{{ _("تمتلك حساباً ؟ تسجيل الدخول") }}</a>
-	</div>
-	</div>
-</section>
+		</div>
+	</section>
+	
+	<section class='for-forgot'>
+		<div class="login-content page-card" style="margin-top: 20px;">
+		<form class="form-signin form-forgot hide" role="form">
+			<div class="page-card-head">
+				<span class="indicator blue" data-text="{{ _("نسيت كلمة المرور") }}"></span></div>
+			<input type="email" id="forgot_email"
+				class="form-control" placeholder="{{ _('Email address') }}" required autofocus>
+			<button class="btn btn-sm btn-primary btn-block btn-forgot" type="submit">{{ _("إرسال كلمة المرور") }}</button>
+		</form>
+		<div class='form-footer'>
+			<a href="#login">{{ _("العودة الى تسجيل الدخول") }}</a>
+		</div>
+		</div>
+	</section>
+</div>
 
-<section class='for-forgot'>
-	<div class="login-content page-card" style="margin-top: 20px;">
-	<form class="form-signin form-forgot hide" role="form">
-		<div class="page-card-head">
-			<span class="indicator blue" data-text="{{ _("نسيت كلمة المرور") }}"></span></div>
-		<input type="email" id="forgot_email"
-			class="form-control" placeholder="{{ _('Email address') }}" required autofocus>
-		<button class="btn btn-sm btn-primary btn-block btn-forgot" type="submit">{{ _("إرسال كلمة المرور") }}</button>
-	</form>
-	<div class='form-footer'>
-		<a href="#login">{{ _("العودة الى تسجيل الدخول") }}</a>
-	</div>
-	</div>
-</section>
 {% endblock %}
 
 {% block script %}

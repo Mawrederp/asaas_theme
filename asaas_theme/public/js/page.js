@@ -1,3 +1,61 @@
+frappe.ui.toolbar.Toolbar = frappe.ui.toolbar.Toolbar.extend({
+	init: function() {
+		$('header').append(frappe.render_template("navbar", {
+			avatar: frappe.avatar(frappe.session.user)
+		}));
+		$('.dropdown-toggle').dropdown();
+
+		console.log("new log")
+		this.load_sidebar_modules();
+		this.load_sidebar_userinfo();
+
+		let awesome_bar = new frappe.search.AwesomeBar();
+		awesome_bar.setup("#navbar-search");
+		awesome_bar.setup("#modal-search");
+
+		this.make();
+	},
+	load_sidebar_userinfo: function(){
+		let user_info = $('#primary-sidebar .user-info');
+		let profile_image = $('#primary-sidebar .profile-image');
+		let frappe_user_info = frappe.user_info();
+		let department = frappe.boot.user_department;
+		profile_image.html(frappe.avatar());
+
+		user_info.html('');
+		if(frappe_user_info.fullname){
+			user_info.append(`<h4 id="user-fullname">${__(frappe_user_info.fullname)}</h4>`)
+		}
+		if(department){
+			user_info.append(`<h4 id="user-department">${__(department)}</h4>`)
+		}
+
+
+
+	},
+	load_sidebar_modules: function(){
+		let sidebar = $('#primary-sidebar .sidebar-modules');
+		sidebar.html('')
+		let modules = frappe.get_desktop_icons();
+
+		for (const module in modules) {
+			if (modules.hasOwnProperty(module)) {
+				const element = modules[module];
+				console.log(element)
+				sidebar.append(`<div class="sidebar-module">
+				<a class="module-link" href="desk#${element.link}">
+				<h5 class="module-title">
+					<span>
+						<i class="${element.icon}"></i>
+					</span>
+					${__(element.label)}</h5>
+				</a>
+			</div>`)
+			}
+		}
+	}
+});
+
 frappe.ui.Page = frappe.ui.Page.extend({
 	add_main_section: function () {
 		$(frappe.render_template("page", {})).appendTo(this.wrapper);
