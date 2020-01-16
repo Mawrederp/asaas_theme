@@ -56,9 +56,9 @@
 		box-sizing: border-box;
   font-size: 14px;
   margin-bottom: 10px;
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 3px 4px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 3px 4px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 4px 2px rgba(0, 0, 0, 0.1);
 }
 .form-signin .form-control:focus {
   z-index: 2;
@@ -114,7 +114,7 @@ header{
 
 .page-card{
 	border-radius: 10px;
-	min-width: 480px;
+	min-width: 100%;
 	padding: 40px 60px;
 	margin-top:60px!important;
 }
@@ -206,6 +206,12 @@ a[href="#forgot"]{
 		width: 520px;
 	}
 }
+@media (min-width:768px){
+	.form-container section{
+		margin:80px;
+
+	}
+}
 
 .indicator::before, .indicator-right::after{
 	display: none;
@@ -220,11 +226,6 @@ a[href="#forgot"]{
 	height: 100%;
 }
 
-
-@font-face {
-	font-family: 'Cairo';
-	src: url('/assets/asaas_theme/css/fonts/Cairo-Light.ttf');
-}
 
 body{
 	font-family: 'Cairo';

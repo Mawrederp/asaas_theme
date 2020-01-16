@@ -306,7 +306,7 @@ body[data-route*="Form/"] .layout-main-section{
     z-index: 0;
     position: initial;
     border-radius: 0;
-    min-width: fit-content;
+    min-width: 185px;
 }
 
 .layout-other-section .page-actions .btn-group.menu-btn-group{
@@ -676,9 +676,7 @@ input[id="navbar-search"] + ul{
 }
 
 
-.frappe-rtl .listview-main-section .page-form .octicon-search{
-    margin-left: 7px;
-}
+
 
 .list_filter{
     padding: 0 20px;
@@ -705,4 +703,12 @@ input[id="navbar-search"] + ul{
 }
 .sort-selector .dropdown{
     margin-top:5px;
+}
+
+.full-width{
+    width: 100vw!important;
+}
+
+html{
+    height: 100%;
 }

@@ -90,6 +90,50 @@ frappe.ui.toolbar.Toolbar = Class.extend({
 
 	setup_sidebar: function () {
 		var header = $('header');
+		header.find(".toggle-sidebar-btn").on("click", function () {
+			var layout_side_section = $('#primary-sidebar');
+			layout_side_section.parent().toggleClass("col-md-2 col-sm-2");
+			layout_side_section.parent().toggle();
+
+			$('.page-head').toggleClass('full-width');
+			$('header .container').toggleClass('full-width');
+			$('.row.layout-main .layout-main-section-wrapper')
+			$('header').parent().toggleClass('col-md-12 col-sm-12');
+			$('header').parent().toggleClass('col-md-10 col-sm-10');
+
+
+
+
+			// var overlay_sidebar = layout_side_section.find('.overlay-sidebar');
+
+			// overlay_sidebar.addClass('opened');
+			// overlay_sidebar.find('.reports-dropdown')
+			// 	.removeClass('dropdown-menu')
+			// 	.addClass('list-unstyled');
+			// overlay_sidebar.find('.dropdown-toggle')
+			// 	.addClass('text-muted').find('.caret')
+			// 	.addClass('hidden-xs hidden-sm');
+
+			// $('<div class="close-sidebar">').hide().appendTo(layout_side_section).fadeIn();
+
+			// var scroll_container = $('html');
+			// scroll_container.css("overflow-y", "hidden");
+
+			// layout_side_section.find(".close-sidebar").on('click', close_sidebar);
+			// layout_side_section.on("click", "a", close_sidebar);
+
+			function close_sidebar(e) {
+				scroll_container.css("overflow-y", "");
+
+				layout_side_section.find("div.close-sidebar").fadeOut(function() {
+					overlay_sidebar.removeClass('opened')
+						.find('.dropdown-toggle')
+						.removeClass('text-muted');
+					overlay_sidebar.find('.reports-dropdown')
+						.addClass('dropdown-menu');
+				});
+			}
+		});
 		header.find(".toggle-sidebar").on("click", function () {
 			var layout_side_section = $('.layout-side-section');
 			var overlay_sidebar = layout_side_section.find('.overlay-sidebar');
