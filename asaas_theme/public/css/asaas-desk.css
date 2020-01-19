@@ -86,8 +86,7 @@ body[data-route=""] .desk-page-head{
 
 body[data-route=""] .content.page-container > div{
     display: table;
-    margin-left:24vw;
-    margin-right: 0;
+    margin: auto;
 }
 
 
@@ -250,4 +249,11 @@ body{
 body .splash{
     z-index: 10000000;
     max-width: fit-content;
+    background-color: white;
+    background: white;
+    height: 100%;
+    width: 100%;
+}
+
+.splash-container{
 }

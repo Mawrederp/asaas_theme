@@ -566,8 +566,18 @@ input[type="checkbox"]{
     z-index: 99999;
     margin: auto;
     border-radius: 50px;
+    max-height: 200px;
+    display: block;
+    margin-top: 35vh;
 }
 
+.splash{
+    min-width: 100vw;
+    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
+    
+}
 .page-head{
     width: calc(82vw - 15px);
     right: 0;
