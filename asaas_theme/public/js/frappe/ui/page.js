@@ -89,7 +89,7 @@ frappe.ui.Page = Class.extend({
 	},
 
 	setup_page: function() {
-		this.$title_area = this.wrapper.find("h1");
+		this.$title_area = $('.page-head').find("h1");
 
 		this.$sub_title_area = this.wrapper.find("h6");
 

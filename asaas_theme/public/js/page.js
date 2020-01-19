@@ -44,11 +44,11 @@ frappe.ui.toolbar.Toolbar = frappe.ui.toolbar.Toolbar.extend({
 				console.log(element)
 				sidebar.append(`<div class="sidebar-module">
 				<a class="module-link" href="desk#${element.link}">
-				<h5 class="module-title">
+				<div class="module-title">
 					<span>
 						<i class="${element.icon}"></i>
 					</span>
-					${__(element.label)}</h5>
+					<h5>${__(element.label)}</h5></div>
 				</a>
 			</div>`)
 			}

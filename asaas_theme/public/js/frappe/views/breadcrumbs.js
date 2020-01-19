@@ -39,7 +39,11 @@ frappe.breadcrumbs = {
 
 		var $breadcrumbs = $("#navbar-breadcrumbs").empty();
 		if(!breadcrumbs) {
+			$(repl('<li><a href="#">%(label)s</a></li>',
+						{ label: __("Main Sections") }))
+						.appendTo($breadcrumbs);
 			$("body").addClass("no-breadcrumbs");
+
 			return;
 		}
 
@@ -88,6 +92,7 @@ frappe.breadcrumbs = {
 				$(repl('<li><a href="#%(route)s">%(label)s</a></li>',
 					{route: route, label: __(breadcrumbs.doctype)}))
 					.appendTo($breadcrumbs);
+				
 			}
 		}
 

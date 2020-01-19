@@ -50,10 +50,10 @@ frappe.ui.toolbar.Toolbar = Class.extend({
 				console.log(element)
 				sidebar.append(`<div class="sidebar-module">
 				<a class="module-link" href="desk#${element.link}">
+				<span>
+					<i class="${element.icon}"></i>
+				</span>
 				<h5 class="module-title">
-					<span>
-						<i class="${element.icon}"></i>
-					</span>
 					${__(element.label)}</h5>
 				</a>
 			</div>`)

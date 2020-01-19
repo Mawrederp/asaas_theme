@@ -233,6 +233,12 @@ body{
     .navbar > .container > .navbar-header{
         float: right;
     }
+    .page-head{
+        width: 100vw;
+    }
+    .page-head .page-title h1{
+        margin-top:15px;
+    }
 }
 
 
@@ -255,5 +261,36 @@ body .splash{
     width: 100%;
 }
 
-.splash-container{
+
+.page-title{
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+.frappe-rtl .page-title{
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+.mail-btn{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.page-title{
+    overflow-x: hidden;
+}
+
+.sidebar-module .module-title h5{
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 0px;
+
+}
+
+.frappe-rtl .sidebar-module .module-title h5{
+    text-align: right;
+    padding-left: 0px;
+    padding-right: 40px;
+
 }
