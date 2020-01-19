@@ -93,6 +93,9 @@ login.reset_sections = function(hide) {
 login.login = function() {
 	login.reset_sections();
 	$(".for-login").toggle(true);
+	if(navigator.language == "ar"){
+		$('body').css('direction','rtl');
+	}
 }
 
 login.steptwo = function() {
