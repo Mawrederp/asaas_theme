@@ -79,9 +79,9 @@
 }
 
 .form-footer, .form-footer a, .form-footer h6 {
-	font-size: 12px;
-	color: #8D99A6;
-	font-weight: bold;
+	font-size: 14px;
+	color: #165777;
+	font-weight: 400;
 }
 
 .form-footer .btn-default {
@@ -116,7 +116,6 @@ header{
 	border-radius: 10px;
 	min-width: 100%;
 	padding: 40px 60px;
-	margin-top:60px!important;
 }
 
 .page-card .page-card-head{
@@ -177,13 +176,14 @@ a[href="#forgot"]{
 #page-title{
 	font-size: 16px;
 	font-weight: bolder;
-	word-spacing: 5px;
+	word-spacing: 3px;
 	color: white;
 	width: 100%;
 	text-align: center;
 	direction: rtl;
 	margin: auto;
 	max-width: 600px;
+	line-height: 33px;
 }
 
 
@@ -209,6 +209,7 @@ a[href="#forgot"]{
 @media (min-width:768px){
 	.form-container section{
 		margin:80px;
+		margin-top: 60px;
 
 	}
 }
@@ -236,4 +237,15 @@ body{
 }
 .background-container{
 	float: right;
+	margin-bottom: 40px;
+}
+
+.btn-login{
+	font-weight: bolder;
+}
+
+
+body {
+    height: 100%;
+    min-height: 100vh;
 }
