@@ -90,27 +90,33 @@ login.reset_sections = function(hide) {
 	});
 }
 
-login.login = function() {
-	login.reset_sections();
-	$(".for-login").toggle(true);
+function rtl_support(){
 	if(navigator.language == "ar"){
 		$('body').css('direction','rtl');
 	}
+}
+login.login = function() {
+	login.reset_sections();
+	$(".for-login").toggle(true);
+	rtl_support();
 }
 
 login.steptwo = function() {
 	login.reset_sections();
 	$(".for-login").toggle(true);
+	rtl_support();
 }
 
 login.forgot = function() {
 	login.reset_sections();
 	$(".for-forgot").toggle(true);
+	rtl_support();
 }
 
 login.signup = function() {
 	login.reset_sections();
 	$(".for-signup").toggle(true);
+	rtl_support();
 }
 
 
