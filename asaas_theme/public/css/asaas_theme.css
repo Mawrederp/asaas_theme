@@ -37,6 +37,9 @@
     .layout-main-section.listview-main-section > .page-form.row{
     background-color: #f8faff;
     border:none;
+    -moz-box-shadow:    2px 2px 5px 0px #ccc;
+    -webkit-box-shadow: 2px 2px 5px 0px #ccc;
+    box-shadow:         2px 2px 5px 0px #ccc;
 }
 
 .content.page-container[data-page-route*="List/"] 
@@ -114,6 +117,14 @@
 }
 .list-item--head,.list-paging-area{
     background-color: white;
+
+}
+
+.list-item--head{
+    font-weight: bolder;
+    font-size: 13px;
+    padding-top: 7px;
+
 }
 .list-paging-area{
     -moz-box-shadow:    2px 2px 5px 0px #ccc;
@@ -171,7 +182,7 @@
 span.indicator.filterable{
     background-color: #f8fafb;
     padding: 5px 10px;
-    width: 85%;
+    width: 100%;
     border-radius: 50px;
     font-size: 14px;
 }
@@ -314,7 +325,7 @@ body[data-route*="Form/"] .layout-main-section{
 }
 
 .layout-other-section .page-actions .btn-group.menu-btn-group{
-    top: 10px;
+    top: 20px;
     left: 0;
     right: unset;
 }
@@ -539,6 +550,20 @@ input[type="checkbox"]{
     margin-left: 13px!important;
 }
 
+.frappe-rtl .list-item input[type="checkbox"]{
+    margin-right: 0!important;
+    margin-left: 5px!important;
+}
+
+.frappe-rtl .list-item input[type="checkbox"]:before{
+    font-size: 17px!important;
+}
+
+.frappe-rtl .list-item .liked-by, .list-item .liked-by-filter-button{
+    margin-right: 0;
+    margin-left: 20px;
+
+}
 .case-wrapper:hover .app-icon{
     background-color: #f79c42!important;
 }

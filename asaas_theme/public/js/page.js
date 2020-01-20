@@ -5,7 +5,6 @@ frappe.ui.toolbar.Toolbar = frappe.ui.toolbar.Toolbar.extend({
 		}));
 		$('.dropdown-toggle').dropdown();
 
-		console.log("new log")
 		this.load_sidebar_modules();
 		this.load_sidebar_userinfo();
 
@@ -41,7 +40,6 @@ frappe.ui.toolbar.Toolbar = frappe.ui.toolbar.Toolbar.extend({
 		for (const module in modules) {
 			if (modules.hasOwnProperty(module)) {
 				const element = modules[module];
-				console.log(element)
 				sidebar.append(`<div class="sidebar-module">
 				<a class="module-link" href="desk#${element.link}">
 				<div class="module-title">

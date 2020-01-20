@@ -390,4 +390,63 @@ body .splash{
 .list-filters,.page-form, .layout-side-section {
     background-color: white;
     margin: auto;
+    -moz-box-shadow:    2px 2px 5px -1px #ccc;
+    -webkit-box-shadow: 2px 2px 5px -1px #ccc;
+    box-shadow:         2px 2px 5px -1px #ccc;
+}
+
+.list-item__content{}
+
+.list-item-container .list-item{
+    border-bottom: 1px solid #d1d8dd69;
+}
+.list-item--head{
+    border-color: #d1d8dd69;
+}
+
+.list-item__content--activity{
+    display: none;
+}
+.list-item__content--id{
+    margin: 0 40px;
+}
+
+.list-item i.octicon-heart{
+    border:1px solid #fff6e8;
+    background-color:#fff6e8;
+    border-radius: 50px;
+}
+.list-item i.octicon-heart.text-extra-muted{
+    color: #fcbd5e81!important;
+}
+
+.list-item i.like-action.octicon-heart{
+    color: #ffb13b;
+}
+.list-item i.octicon-heart:hover{
+    background-color: #f8e6c8c9;
+}
+
+.list-item__content--id a{
+    color: #000000a8!important;
+    font-size: 15px;
+}
+
+.list-paging-area{
+    border-top: 1px solid #d1d8dd69;
+}
+span.checked-items-status.text-ellipsis.text-muted.small.hidden-xs.hidden-sm{
+    border:1px solid cadetblue;
+    border-radius: 12px;
+    padding: 12px;
+    display: block;
+    -moz-box-shadow:    2px 2px 5px -1px #ccc;
+    -webkit-box-shadow: 2px 2px 5px -1px #ccc;
+    box-shadow:         2px 2px 5px -1px #ccc;
+    margin: 10px 0;
+    background-color:cadetblue!important;
+    color: white!important;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
 }
