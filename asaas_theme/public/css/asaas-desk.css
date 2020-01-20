@@ -365,3 +365,6 @@ body .splash{
 
     }
 }
+.frappe-rtl .page-actions .primary-action{
+    margin-left: -15px;
+}
