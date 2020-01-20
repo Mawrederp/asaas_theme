@@ -45,6 +45,7 @@
         -moz-box-shadow:    2px 2px 5px 0px #ccc;
         -webkit-box-shadow: 2px 2px 5px 0px #ccc;
         box-shadow:         2px 2px 5px 0px #ccc;
+        min-height: 34px;
     }
 
 .btn-primary{

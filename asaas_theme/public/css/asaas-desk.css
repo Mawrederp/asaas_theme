@@ -121,7 +121,7 @@ body[data-route=""] header .navbar > .container,.page-head{
 }
 
 .layout-side-section .list-sidebar {
-    display: inline-flex;
+    display: block;
 }
 .layout-side-section ul:not(.dropdown-menu) li:not(:empty){
     margin: 0 5px;
@@ -269,7 +269,7 @@ body{
 }
 
 .frappe-rtl div.frappe-control input{
-    padding-right: 20px;
+    padding-right: 30px;
 }
 
 body .splash{
@@ -385,4 +385,9 @@ body .splash{
     float: right;
     padding-left: 0px;
     padding-right: 7px;
+}
+
+.list-filters,.page-form, .layout-side-section {
+    background-color: white;
+    margin: auto;
 }
