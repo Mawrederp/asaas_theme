@@ -471,9 +471,9 @@ frappe.Application = Class.extend({
 	},
 
 	show_update_available: () => {
-		frappe.call({
-			"method": "frappe.utils.change_log.show_update_popup"
-		});
+		// frappe.call({
+		// 	"method": "frappe.utils.change_log.show_update_popup"
+		// });
 	},
 
 	setup_analytics: function() {
