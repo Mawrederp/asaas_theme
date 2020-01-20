@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo&display=swap&subset=arabic');
+
 body{
     background-color: #f8faff!important;    
+    font-family: 'Cairo', sans-serif;
 }
 #page-desktop{
     background-color: #f8faff!important;
@@ -479,7 +482,7 @@ span.checked-items-status.text-ellipsis.text-muted.small.hidden-xs.hidden-sm{
     margin-top: 9px;
 }
 
-.tags-label{
+.tags-label,.stat-label{
     display: none;
 }
 
@@ -489,4 +492,15 @@ span.checked-items-status.text-ellipsis.text-muted.small.hidden-xs.hidden-sm{
 }
 .remove-tag i::before{
     color: white!important;
+}
+
+
+.sidebar-menu.sidebar-stat{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+.sidebar-menu.sidebar-stat li{
+    margin:5px!important;
 }
