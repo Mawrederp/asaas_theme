@@ -169,7 +169,9 @@ body[data-route=""] header .navbar > .container,.page-head{
 .page-form {
     border-bottom: none;
 }
-
+.tags-list{
+    display: inline!important;
+}
 .frappe-rtl .tags-list{
     padding-left: 0;
     padding-right: 3px;
@@ -449,4 +451,42 @@ span.checked-items-status.text-ellipsis.text-muted.small.hidden-xs.hidden-sm{
     font-size: 15px;
     text-align: center;
     cursor: pointer;
+}
+
+.frappe-rtl .sidebar-menu .badge{
+    left: -10px;
+}
+.sidebar-menu .badge{
+    right: -10px;
+}
+.form-tags li.tags-list-item{
+    border:none!important;
+    box-shadow: none!important;
+    padding: 0px!important;
+}
+
+.tags-list-item ul{
+    display: inline!important;
+}
+
+.tags-list-item ul li{
+    border: none!important;
+    box-shadow: none!important;
+
+}
+
+.tags-list-item .tags-placeholder,.tags-list-item .awesomplete {
+    margin-top: 9px;
+}
+
+.tags-label{
+    display: none;
+}
+
+.remove-tag{
+    background-color: #f68f35;
+    color: white!important;
+}
+.remove-tag i::before{
+    color: white!important;
 }

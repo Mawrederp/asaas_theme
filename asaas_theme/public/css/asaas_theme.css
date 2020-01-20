@@ -10,6 +10,8 @@
 .frappe-rtl .filter-box .filter-actions a{
     margin-left: 0;
     margin-right: 5px;
+    font-size: 13px;
+    padding: 10px 12px;
 }
 
 .filter-box .filter-actions a{
@@ -42,6 +44,13 @@
     box-shadow:         2px 2px 5px 0px #ccc;
 }
 
+.module-section{
+    background-color: white;
+    border:none;
+    -moz-box-shadow:    2px 2px 5px 0px #ccc;
+    -webkit-box-shadow: 2px 2px 5px 0px #ccc;
+    box-shadow:         2px 2px 5px 0px #ccc;
+}
 .content.page-container[data-page-route*="List/"] 
     .layout-main-section.listview-main-section > .page-form.row 
         .form-control{
@@ -564,6 +573,12 @@ input[type="checkbox"]{
     margin-left: 20px;
 
 }
+
+.list-item .liked-by, .list-item .liked-by-filter-button{
+    margin-left: 0;
+    margin-right: 20px;
+}
+
 .case-wrapper:hover .app-icon{
     background-color: #f79c42!important;
 }
