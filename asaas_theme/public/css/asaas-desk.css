@@ -368,3 +368,21 @@ body .splash{
 .frappe-rtl .page-actions .primary-action{
     margin-left: -15px;
 }
+
+
+.sidebar-module .module-title span{
+    float: left;
+    padding-left: 7px;
+    padding-right: 0px;
+    min-width: 30px;
+
+}
+.sidebar-module .module-title span i{
+    font-size: 25px;
+}
+
+.frappe-rtl .sidebar-module .module-title span{
+    float: right;
+    padding-left: 0px;
+    padding-right: 7px;
+}

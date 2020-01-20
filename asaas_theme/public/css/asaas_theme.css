@@ -684,17 +684,6 @@ header .navbar .container{
     text-decoration: none;
 }
 
-.sidebar-module .module-title span{
-    float: left;
-}
-.sidebar-module .module-title span i{
-    font-size: 25px;
-}
-
-.frappe-rtl .sidebar-module .module-title span{
-    float: right;
-}
-
 header .navbar .form-group-sm .form-control{
     height: 35px;
 }
