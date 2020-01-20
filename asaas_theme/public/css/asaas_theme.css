@@ -2,7 +2,7 @@
     color: white;
     background-color: #e53929;
     border-color: #e53929;
-    padding: 7px;
+    padding: 5px 12px;
     margin-top: 0px;
     text-decoration: none;
 }
@@ -16,6 +16,8 @@
     margin-left: 5px;
     margin-right: 0;
     border-radius: 7px;
+    min-width: 35px;
+    min-height: 30px
 
 }
 .filter-box{
@@ -96,6 +98,7 @@
 
 .show_filters{
     border-bottom: none;
+    margin: 15px 0;
 }
 .result,.no-result{
     background-color: white;
@@ -697,10 +700,6 @@ input[id="navbar-search"] + ul{
 
 
 
-.list_filter{
-    padding: 0 20px;
-}
-
 #navbar-search{
     border-radius: 20px!important;
 }
@@ -772,4 +771,7 @@ html{
 
 .form-documents{
     color: #165777;    
+}
+.list_filter.row{
+    margin:auto;
 }
