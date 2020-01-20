@@ -658,10 +658,11 @@ header .navbar .container{
 
 .sidebar-modules{
     padding: 40px;
+    padding-top: 10px;
 }
 
 .sidebar-module,.module-link{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #edf4f7;
     text-align: center;
     color:#eef5fa;
     padding: 2px 0;
@@ -678,6 +679,7 @@ header .navbar .container{
 .sidebar-module:hover .module-link{
     color: #f68f35;
     border-color: #f68f35;
+    border-image: radial-gradient(#f68f35, #f8b376) 1;
     cursor: pointer;
     text-decoration: none;
 }

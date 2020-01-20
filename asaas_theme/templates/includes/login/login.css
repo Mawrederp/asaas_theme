@@ -115,7 +115,8 @@ header{
 .page-card{
 	border-radius: 10px;
 	min-width: 100%;
-	padding: 40px 60px;
+	padding: 20px 60px;
+	margin-bottom: 0;
 }
 
 .page-card .page-card-head{
@@ -174,16 +175,16 @@ a[href="#forgot"]{
 }
 
 #page-title{
-	font-size: 16px;
-	font-weight: bolder;
-	word-spacing: 3px;
+	font-size: 17px;
+	font-weight: lighter;
+	word-spacing: 1px;
 	color: white;
 	width: 100%;
 	text-align: center;
 	direction: rtl;
 	margin: auto;
 	max-width: 600px;
-	line-height: 33px;
+	line-height: 30px;
 }
 
 
@@ -191,6 +192,7 @@ a[href="#forgot"]{
 	max-width: 250px;
 	margin: auto;
 	display: block;
+	margin-bottom: 20px;
 }
 
 @media (max-width: 991px) and (min-width: 768px){
@@ -220,6 +222,7 @@ a[href="#forgot"]{
 
 .page-card .page-card-head .indicator{
 	font-size: 25px;
+	color: #185878;
 }
 .container{
 	margin-top: 15vh;
@@ -227,7 +230,9 @@ a[href="#forgot"]{
 	height: 100%;
 }
 
-
+#background{
+	max-width: 95%;
+}
 body{
 	font-family: 'Cairo';
 	font-weight: bolder;
@@ -248,4 +253,7 @@ body{
 body {
     height: 100%;
     min-height: 100vh;
+}
+.login-background{
+	margin-top: -30px;
 }
