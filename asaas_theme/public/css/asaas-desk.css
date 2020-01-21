@@ -78,6 +78,7 @@ body[data-route=""] .navbar-default, body[data-route="desktop"] .navbar-default{
 
 .page-title .title-text{
     margin-right: 10px;
+    max-width: fit-content;
 }
 
 .page-title .title-text:empty{
@@ -212,7 +213,14 @@ body[data-route=""] header .navbar > .container,.page-head{
 body{
     overflow: unset;
 }
-
+@media (max-width:395px){
+    header .navbar .container{
+        padding: 0;
+    }
+    .frappe-rtl header .navbar .container{
+        padding: 0;
+    }
+}
 @media (max-width: 991px) {
     header .navbar{
         width: 100%;
@@ -262,7 +270,12 @@ body{
         width: 100vw;
     }
     .page-head .page-title h1{
-        margin-top:0px;
+        margin-top:6px;
+        font-size: 24px;
+    }
+
+    .frappe-rtl #navbar-breadcrumbs{
+        float: right;
     }
 }
 
@@ -358,16 +371,18 @@ body .splash{
     display: none;
 }
 
-@media (min-width: 768px) and (max-width: 991px){
+/* @media (min-width: 768px) and (max-width: 991px){
     .page-title{
         margin-top: 10px;
     }
-}
+} */
 
 @media (max-width: 767px){
     .set-filters{
         padding-right:135px;
-
+    }
+    .page-title h1{
+        padding-right: 0;
     }
 }
 .frappe-rtl .page-actions .primary-action{
@@ -503,4 +518,17 @@ span.checked-items-status.text-ellipsis.text-muted.small.hidden-xs.hidden-sm{
 }
 .sidebar-menu.sidebar-stat li{
     margin:5px!important;
+}
+
+.frappe-rtl #navbar-breadcrumbs > li > a:before{
+    color: white;
+    content: "\f104";
+    -ms-transform:rotate(0);
+    -webkit-transform:rotate(0);
+    transform:rotate(0);
+    top:3px;
+}
+.set-filters{
+    display: flex;
+    flex-wrap: wrap;
 }
