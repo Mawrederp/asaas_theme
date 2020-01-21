@@ -119,6 +119,24 @@ body[data-route=""] header .navbar > .container,.page-head{
 }
 
 
+
+.standard-actions .btn-group .dropdown-menu{
+    border-radius: 15px!;
+    border-color: #eee;
+}
+
+.standard-actions .btn-group .dropdown-menu li {
+    box-shadow: none!important;
+    background-color: transparent;
+    padding: 8px;
+    padding: 0!important;
+}
+
+
+.profile-image .avatar-small .standard-image{
+    padding: 40% 0;
+}
+
 .layout-side-section ul:not(.dropdown-menu){
     display: inline-flex;
     vertical-align: middle;
@@ -282,7 +300,7 @@ body{
 
 
 .frappe-rtl .listview-main-section .page-form .octicon-search{
-    margin-left: -10px;
+    margin-left: -20px;
     z-index: 5;
 }
 
