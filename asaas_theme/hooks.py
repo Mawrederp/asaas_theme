@@ -18,27 +18,27 @@ app_license = "MIT"
 app_include_css = [
 	"/assets/asaas_theme/css/asaas_theme.css",
 	"/assets/asaas_theme/css/header.css",
-	"/assets/css/asaas_custom/frappe-web.css",
-	"/assets/css/asaas_custom/desk.min.css",
-	"/assets/css/asaas_custom/frappe-rtl.css",
-	"/assets/css/asaas_custom/module.min.css",
-	"/assets/css/asaas_custom/form.min.css",
-	"/assets/css/asaas_custom/list.min.css",
-	"/assets/css/asaas_custom/report.min.css",
-	"/assets/css/asaas_custom/web_form.css"
+	"/assets/asaas_theme/css/frappe-web.css",
+	"/assets/asaas_theme/css/desk.min.css",
+	"/assets/asaas_theme/css/frappe-rtl.css",
+	"/assets/asaas_theme/css/module.min.css",
+	"/assets/asaas_theme/css/form.min.css",
+	"/assets/asaas_theme/css/list.min.css",
+	"/assets/asaas_theme/css/report.min.css",
+	"/assets/asaas_theme/css/web_form.css"
 	]
 app_include_js = [
 	"/assets/asaas_theme/js/page.js",
-	"/assets/js/frappe-web.min.js",
-	"/assets/js/control.min.js",
-	"/assets/js/dialog.min.js",
-	"/assets/js/libs.min.js",
-	"/assets/js/desk.min.js",
-	"/assets/js/form.min.js",
-	"/assets/js/list.min.js",
-	"/assets/js/report.min.js",
-	"/assets/js/web_form.min.js",
-	"/assets/js/print_format_v3.min.js"
+	"/assets/asaas_theme/js/frappe-web.min.js",
+	"/assets/asaas_theme/js/control.min.js",
+	"/assets/asaas_theme/js/dialog.min.js",
+	"/assets/asaas_theme/js/libs.min.js",
+	"/assets/asaas_theme/js/desk.min.js",
+	"/assets/asaas_theme/js/form.min.js",
+	"/assets/asaas_theme/js/list.min.js",
+	"/assets/asaas_theme/js/report.min.js",
+	"/assets/asaas_theme/js/web_form.min.js",
+	"/assets/asaas_theme/js/print_format_v3.min.js"
 	]
 
 website_context = {
