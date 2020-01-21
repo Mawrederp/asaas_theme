@@ -15,9 +15,31 @@ app_license = "MIT"
 # ------------------
 
 # include js, css files in header of desk.html
-app_include_css = ["/assets/asaas_theme/css/asaas_theme.css",
-                    "/assets/asaas_theme/css/header.css"]
-app_include_js = "/assets/asaas_theme/js/page.js"
+app_include_css = [
+	"/assets/asaas_theme/css/asaas_theme.css",
+	"/assets/asaas_theme/css/header.css",
+	"/assets/css/asaas_custom/frappe-web.css",
+	"/assets/css/asaas_custom/desk.min.css",
+	"/assets/css/asaas_custom/frappe-rtl.css",
+	"/assets/css/asaas_custom/module.min.css",
+	"/assets/css/asaas_custom/form.min.css",
+	"/assets/css/asaas_custom/list.min.css",
+	"/assets/css/asaas_custom/report.min.css",
+	"/assets/css/asaas_custom/web_form.css"
+	]
+app_include_js = [
+	"/assets/asaas_theme/js/page.js",
+	"/assets/js/frappe-web.min.js",
+	"/assets/js/control.min.js",
+	"/assets/js/dialog.min.js",
+	"/assets/js/libs.min.js",
+	"/assets/js/desk.min.js",
+	"/assets/js/form.min.js",
+	"/assets/js/list.min.js",
+	"/assets/js/report.min.js",
+	"/assets/js/web_form.min.js",
+	"/assets/js/print_format_v3.min.js"
+	]
 
 website_context = {
 	"favicon": 	"/assets/asaas_theme/images/favicon.ico",
