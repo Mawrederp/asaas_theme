@@ -295,8 +295,12 @@ body[data-route*="Form/"] .layout-main-section{
 
 .page-title .title-text:hover{
     cursor: pointer;
-
 }
+
+.page-title .title-text{
+    max-width: 100%;
+}
+
 .page-title .title-text:hover:before{
     color: black;
 }
@@ -692,7 +696,7 @@ header .navbar .container{
     background-color: transparent!important;
     border: none;
 }
-.profile-image:hover{
+.profile-image{
     border:1px solid #eef5fa;
 }
 .user-info{
@@ -752,9 +756,9 @@ input[id="navbar-search"] + ul{
 
 }
 
-.sidebar-image-wrapper{
+/*.sidebar-image-wrapper{
     display: none;
-}
+}*/
 
 .page-title .title-text:before{
     color: white!important;
