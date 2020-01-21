@@ -64,8 +64,9 @@ frappe.ui.form.setup_user_image_event = function(frm) {
 	}
 
 	// bind click on image_wrapper
-	frm.sidebar.image_wrapper.on('click', function() {
-		var field = frm.get_field(frm.meta.image_field);
+	$('.profile-image').click(function() {
+	// frm.sidebar.image_wrapper.on('click', function() {
+		var field = cur_frm.get_field(cur_frm.meta.image_field);
 		if(!field.$input) {
 			field.make_input();
 		}
