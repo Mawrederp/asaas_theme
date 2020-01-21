@@ -528,6 +528,7 @@ header .navbar-fixed-top .avatar-small .avatar-frame{
 }
 .frappe-rtl header .navbar-fixed-top .dropdown-navbar-user a.dropdown-toggle{
     padding-left: 0;
+    /* background-color: #edf4f7; */
 }
 
 .page-head{
@@ -639,9 +640,13 @@ input[type="checkbox"]{
     left: 0;
     right: auto;
 }
+header{
+    margin-bottom: 35px;
+}
 header .navbar{
     left: auto;
     right: 0;
+    padding: 0;
 }
 .frappe-rtl header .navbar{
     left: 0;

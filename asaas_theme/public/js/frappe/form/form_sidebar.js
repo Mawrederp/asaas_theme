@@ -15,7 +15,7 @@ frappe.ui.form.Sidebar = Class.extend({
 		this.comments = this.sidebar.find(".sidebar-comments");
 		this.user_actions = this.sidebar.find(".user-actions");
 		this.image_section = this.sidebar.find(".sidebar-image-section");
-		this.image_wrapper = this.image_section.find('.sidebar-image-wrapper');
+		this.image_wrapper = $.find('.sidebar-image-wrapper');
 
 		this.make_assignments();
 		this.make_attachments();

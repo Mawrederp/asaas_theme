@@ -262,6 +262,15 @@ body{
     .open .page-actions ul.dropdown-menu{
         display: block;
     }
+    .navbar-desk{
+        width: fit-content!important;
+    }
+    .frappe-rtl .navbar-desk ~ ul > li{
+        float: right!important;
+    }
+    .navbar-right .visible-xs{
+        padding: 5px;
+    }
 }
 #navbar-breadcrumbs{
     width: fit-content;
