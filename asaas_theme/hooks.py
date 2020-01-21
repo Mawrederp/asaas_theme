@@ -41,7 +41,6 @@ app_include_js = [
 	"/assets/asaas_theme/js/web_form.min.js",
 	"/assets/asaas_theme/js/print_format_v3.min.js"
 	]
-base_template = ["base.html"]
 
 website_context = {
 	"favicon": 	"/assets/asaas_theme/images/favicon.ico",
