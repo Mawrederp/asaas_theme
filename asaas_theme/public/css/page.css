@@ -153,7 +153,8 @@ select.input-sm {
     width: 100%;
   }
   .page-title h1 {
-    padding-right: 170px;
+    display: inline;
+    padding-right: 0;
   }
   .page-head .page-title h1 {
     font-size: 18px;
