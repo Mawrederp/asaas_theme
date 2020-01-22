@@ -20,9 +20,7 @@
 	<link rel="shortcut icon" href="{{ favicon or "/assets/frappe/images/favicon.png" }}" type="image/x-icon">
 	<link rel="icon" href="{{ favicon or "/assets/frappe/images/favicon.png" }}" type="image/x-icon">
 	{% for include in include_css -%}
-		{% if "assets/css/" not in include %}
-	<link type="text/css" rel="stylesheet" href="{{ include }}?ver={{ build_version }}">
-	{%- endif -%}
+		<link type="text/css" rel="stylesheet" href="{{ include }}?ver={{ build_version }}">
 	{%- endfor -%}
 	
 </head>
@@ -120,13 +118,8 @@
 	</script>
 
 {% for include in include_js %}
-{% if "assets/js/" not in include %}
 	<script type="text/javascript" src="{{ include }}?ver={{ build_version }}"></script>
-{%endif%}
-
-
 {% endfor %}
-<script type="text/javascript" src="assets/frappe/js/frappe/toolbar.js?ver={{ build_version }}"></script>
 	{% include "templates/includes/app_analytics/google_analytics.html" %}
 	{% include "templates/includes/app_analytics/mixpanel_analytics.html" %}
 

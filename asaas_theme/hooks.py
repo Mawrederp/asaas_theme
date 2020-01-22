@@ -16,30 +16,15 @@ app_license = "MIT"
 
 # include js, css files in header of desk.html
 app_include_css = [
-	"/assets/asaas_theme/css/desk.min.css",
-	"/assets/asaas_theme/css/list.min.css",
-	"/assets/asaas_theme/css/form.min.css",
-	"/assets/asaas_theme/css/report.min.css",
-	"/assets/asaas_theme/css/module.min.css",
-	"/assets/asaas_theme/css/header.css",
-	"/assets/asaas_theme/css/frappe-web.css",
-	"/assets/asaas_theme/css/frappe-rtl.css",
-	"/assets/asaas_theme/css/web_form.css",
-	"/assets/asaas_theme/css/asaas-desk.css",
 	"/assets/asaas_theme/css/asaas_theme.css",
+	"/assets/asaas_theme/css/asaas-desk.css",
+	"/assets/asaas_theme/css/header.css",
+
 
 	]
 app_include_js = [
-	"/assets/asaas_theme/js/libs.min.js",
-	"/assets/asaas_theme/js/desk.min.js",
-	"/assets/asaas_theme/js/list.min.js",
-	"/assets/asaas_theme/js/form.min.js",
-	"/assets/asaas_theme/js/control.min.js",
-	"/assets/asaas_theme/js/report.min.js",
 	"/assets/asaas_theme/js/page.js",
-	"/assets/asaas_theme/js/dialog.min.js",
-	"/assets/asaas_theme/js/web_form.min.js",
-	"/assets/asaas_theme/js/print_format_v3.min.js"
+	"/assets/asaas_theme/js/asaas_theme.min.js"
 	]
 
 website_context = {
