@@ -239,7 +239,7 @@ body{
         padding: 0;
     }
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     header .navbar{
         width: 100%;
     }
@@ -271,6 +271,11 @@ body{
     .navbar-right .visible-xs{
         padding: 5px;
     }
+
+    body[data-route^="Form"] .page-title .title-text{
+        font-size: 24px;
+        margin-top: -15px;
+    }
 }
 #navbar-breadcrumbs{
     width: fit-content;
@@ -286,7 +291,7 @@ body{
     }
 }
 
-@media (max-width: 991px){
+@media (max-width: 767px){
     #navbar-breadcrumbs{
         max-width: fit-content;
     }
@@ -296,20 +301,21 @@ body{
     .page-head{
         width: 100vw;
     }
+    .frappe-rtl #navbar-breadcrumbs{
+        float: right;
+    }    
+}
+@media (max-width: 991px){
     .page-head .page-title h1{
         margin-top:6px;
         font-size: 24px;
     }
-
-    .frappe-rtl #navbar-breadcrumbs{
-        float: right;
-    }
 }
-
-
 
 .frappe-rtl .listview-main-section .page-form .octicon-search{
     margin-left: -20px;
+    margin-right: 5px;
+
     z-index: 5;
 }
 
@@ -558,4 +564,9 @@ span.checked-items-status.text-ellipsis.text-muted.small.hidden-xs.hidden-sm{
 .set-filters{
     display: flex;
     flex-wrap: wrap;
+}
+
+.frappe-rtl #search-modal .modal-header button{
+    right: unset;
+    left: 0;
 }

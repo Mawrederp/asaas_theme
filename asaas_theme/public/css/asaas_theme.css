@@ -59,6 +59,7 @@
         -webkit-box-shadow: 2px 2px 5px 0px #ccc;
         box-shadow:         2px 2px 5px 0px #ccc;
         min-height: 34px;
+        width: fit-content;
     }
 
 .btn-primary{
@@ -217,6 +218,9 @@ input.frappe-control{
     border-radius: 7px;
 }
 
+.frappe-control{
+    min-width: fit-content;
+}
 
 .filter_area .form-control{
     color:#a6b2b2;
@@ -572,16 +576,16 @@ input[type="checkbox"]{
     font-size: 17px!important;
 }
 
+.list-item .liked-by, .list-item .liked-by-filter-button{
+    margin-left: 0;
+    margin-right: 20px;
+}
 .frappe-rtl .list-item .liked-by, .list-item .liked-by-filter-button{
     margin-right: 0;
     margin-left: 20px;
 
 }
 
-.list-item .liked-by, .list-item .liked-by-filter-button{
-    margin-left: 0;
-    margin-right: 20px;
-}
 
 .case-wrapper:hover .app-icon{
     background-color: #f79c42!important;
