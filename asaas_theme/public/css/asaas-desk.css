@@ -570,3 +570,16 @@ span.checked-items-status.text-ellipsis.text-muted.small.hidden-xs.hidden-sm{
     right: unset;
     left: 0;
 }
+
+.form-section:not(:last-child), .form-inner-toolbar{
+    border-top:1px solid #d1d8dd;
+    border-bottom: none;
+}
+
+.form-inner-toolbar{
+    background-color: #fff;
+}
+
+.btn-primary.green{
+    color: white;
+}

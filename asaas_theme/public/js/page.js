@@ -500,7 +500,7 @@ frappe.ui.Page = frappe.ui.Page.extend({
 		this.actions_btn_group = this.page_actions.find(".actions-btn-group");
 
 		this.page_form = $('<div class="page-form row hide"></div>').prependTo(this.main);
-		this.inner_toolbar = $('<div class="form-inner-toolbar hide"></div>').prependTo(this.main);
+		this.inner_toolbar = $('<div class="form-inner-toolbar"></div>').prependTo(this.main);
 		this.icon_group = this.page_actions.find(".page-icon-group");
 
 		if(this.make_page) {
@@ -745,6 +745,7 @@ frappe.ui.Page = frappe.ui.Page.extend({
 
 		if(group) {
 			var $group = this.get_or_add_inner_group_button(group);
+			$(this.inner_toolbar).removeClass("hide");
 			$group.find('button').addClass(item_class[$group.index() % 4]);
 
 
