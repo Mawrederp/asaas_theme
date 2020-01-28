@@ -617,6 +617,17 @@ input[type="checkbox"]{
 }
 
 .splash img{
+    background-color: unset;
+    min-width: unset;
+    z-index: 99999;
+    margin: auto;
+    border-radius: unset;
+    max-height: 150px;
+    display: block;
+    margin-top: 35vh;
+}
+
+/*.splash img{
     background-color: #e1e4ec;
     min-width: 500px;
     z-index: 99999;
@@ -626,14 +637,14 @@ input[type="checkbox"]{
     display: block;
     margin-top: 35vh;
 }
-
+*/
 .splash{
     min-width: 100vw;
     min-height: 100vh;
     height: 100vh;
     width: 100vw;
-    
 }
+
 .page-head{
     width: calc(82vw);
     right: 0;

@@ -29,7 +29,7 @@ app_include_js = [
 
 website_context = {
 	"favicon": 	"/assets/asaas_theme/images/favicon.ico",
-	"splash_image": "/assets/asaas_theme/images/logo.png"
+	"splash_image": "/assets/asaas_theme/images/essal_new_logo.svg"
 }
 
 boot_session = "asaas_theme.startup.boot.boot_session"
