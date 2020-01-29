@@ -149,9 +149,9 @@ header{
 }
 body{
 	background: rgb(22,87,119);
-	background: -moz-linear-gradient(180deg, rgba(22,87,119,1) 0%, rgba(96,140,162,1) 50%, rgba(248,249,249,1) 100%);
-	background: -webkit-linear-gradient(180deg, rgba(22,87,119,1) 0%, rgba(96,140,162,1) 50%, rgba(248,249,249,1) 100%);
-	background: linear-gradient(180deg, rgba(22,87,119,1) 0%, rgba(96,140,162,1) 50%, rgba(248,249,249,1) 100%);
+	background: -moz-transparent linear-gradient(180deg, #FFFFFF 20%, #175878 100%) 0% 0% no-repeat padding-box;
+	background: -webkit-transparent linear-gradient(180deg, #FFFFFF 20%, #175878 100%) 0% 0% no-repeat padding-box;
+	background: transparent linear-gradient(180deg, #FFFFFF 20%, #175878 100%) 0% 0% no-repeat padding-box;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#165777",endColorstr="#f8f9f9",GradientType=1);
 	background-repeat: no-repeat;
 	height: 100%;
@@ -175,10 +175,10 @@ a[href="#forgot"]{
 }
 
 #page-title{
-	font-size: 17px;
-	font-weight: lighter;
+	font-size: 21px;
+	font-weight: bold;
 	word-spacing: 1px;
-	color: white;
+	color: #175878;
 	width: 100%;
 	text-align: center;
 	direction: rtl;
@@ -193,6 +193,8 @@ a[href="#forgot"]{
 	margin: auto;
 	display: block;
 	margin-bottom: 20px;
+	margin-right: 32vh;
+
 }
 
 @media (max-width: 991px) and (min-width: 768px){
@@ -221,8 +223,9 @@ a[href="#forgot"]{
 }
 
 .page-card .page-card-head .indicator{
-	font-size: 25px;
-	color: #185878;
+	font-weight: bold;
+	font-size: 28px;
+	color: #175878;
 }
 .container{
 	margin-top: 15vh;
@@ -234,7 +237,7 @@ a[href="#forgot"]{
 	max-width: 95%;
 }
 body{
-	font-family: 'Cairo';
+	font-family: 'Tajawal'!important;
 	font-weight: bolder;
 }
 .form-container{
