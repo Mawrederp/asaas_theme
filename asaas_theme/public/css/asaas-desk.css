@@ -220,8 +220,10 @@ body[data-route=""] header .navbar > .container,.page-head{
     margin-left: 0!important;
     margin-right: 10px!important;
 }
-.navbar-brand.toggle-sidebar-btn .octicon-three-bars{
-    font-size: 25px;
+.navbar-brand.toggle-sidebar-btn img{
+    width: 32px;
+    height: 32px;
+
 }
 
 .frappe-rtl form.navbar-form.navbar-right{
@@ -582,4 +584,22 @@ span.checked-items-status.text-ellipsis.text-muted.small.hidden-xs.hidden-sm{
 
 .btn-primary.green{
     color: white;
+}
+
+.navbar-form[role="search"]{
+    margin-top: 9px;
+}
+.navbar-brand{
+    padding-right: 10px;
+    padding-left: 20px;
+}
+
+.frappe-rtl .navbar-brand{
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+.dropdown-navbar-new-comments a img{
+    width: 18px;
+    height: 22px;
 }
