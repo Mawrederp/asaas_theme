@@ -231,7 +231,7 @@ body[data-route=""] header .navbar > .container,.page-head{
 }
 
 body{
-    overflow: unset;
+    overflow-y: scroll;
 }
 @media (max-width:395px){
     header .navbar .container{

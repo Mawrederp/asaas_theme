@@ -196,7 +196,7 @@ a[href="#forgot"]{
 	position: absolute;
 	top: 0;
 	left: 0;
-	right: 85px;
+	right: 5vw;
 }
 
 @media (max-width: 991px) and (min-width: 768px){
