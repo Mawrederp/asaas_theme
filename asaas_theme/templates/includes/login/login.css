@@ -193,8 +193,10 @@ a[href="#forgot"]{
 	margin: auto;
 	display: block;
 	margin-bottom: 20px;
-	margin-right: 32vh;
-
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 5vw;
 }
 
 @media (max-width: 991px) and (min-width: 768px){
@@ -234,7 +236,8 @@ a[href="#forgot"]{
 }
 
 #background{
-	max-width: 95%;
+	max-width: 100%;
+	margin-top: 185px;
 }
 body{
 	font-family: 'Tajawal'!important;
