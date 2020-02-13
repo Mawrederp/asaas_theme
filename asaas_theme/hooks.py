@@ -16,20 +16,20 @@ app_license = "MIT"
 
 # include js, css files in header of desk.html
 app_include_css = [
-	"/assets/asaas_theme/css/asaas_theme.css",
-	"/assets/asaas_theme/css/asaas-desk.css",
-	"/assets/asaas_theme/css/header.css",
+    "/assets/asaas_theme/css/asaas_theme.css",
+    "/assets/asaas_theme/css/asaas-desk.css",
+    "/assets/asaas_theme/css/header.css",
 
 
-	]
+    ]
 app_include_js = [
-	"/assets/asaas_theme/js/page.js",
-	"/assets/asaas_theme/js/asaas_theme.min.js"
-	]
+    "/assets/asaas_theme/js/page.js",
+    "/assets/asaas_theme/js/asaas_theme.min.js"
+    ]
 
 website_context = {
-	"favicon": 	"/assets/asaas_theme/images/favicon.ico",
-	"splash_image": "/assets/asaas_theme/images/essal_new_logo.svg"
+    "favicon":  "/assets/asaas_theme/images/favicon.ico",
+    "splash_image": "/assets/asaas_theme/images/essal_new_logo.svg"
 }
 
 boot_session = "asaas_theme.startup.boot.boot_session"
@@ -54,7 +54,7 @@ boot_session = "asaas_theme.startup.boot.boot_session"
 
 # website user home page (by Role)
 # role_home_page = {
-#	"Role": "home_page"
+#   "Role": "home_page"
 # }
 
 # Website user home page (by function)
@@ -83,11 +83,11 @@ boot_session = "asaas_theme.startup.boot.boot_session"
 # Permissions evaluated in scripted ways
 
 # permission_query_conditions = {
-# 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
+#   "Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
 # }
 #
 # has_permission = {
-# 	"Event": "frappe.desk.doctype.event.event.has_permission",
+#   "Event": "frappe.desk.doctype.event.event.has_permission",
 # }
 
 # Document Events
@@ -95,32 +95,32 @@ boot_session = "asaas_theme.startup.boot.boot_session"
 # Hook on document methods and events
 
 # doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-#	}
+#   "*": {
+#       "on_update": "method",
+#       "on_cancel": "method",
+#       "on_trash": "method"
+#   }
 # }
 
 # Scheduled Tasks
 # ---------------
 
 # scheduler_events = {
-# 	"all": [
-# 		"asaas_theme.tasks.all"
-# 	],
-# 	"daily": [
-# 		"asaas_theme.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"asaas_theme.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"asaas_theme.tasks.weekly"
-# 	]
-# 	"monthly": [
-# 		"asaas_theme.tasks.monthly"
-# 	]
+#   "all": [
+#       "asaas_theme.tasks.all"
+#   ],
+#   "daily": [
+#       "asaas_theme.tasks.daily"
+#   ],
+#   "hourly": [
+#       "asaas_theme.tasks.hourly"
+#   ],
+#   "weekly": [
+#       "asaas_theme.tasks.weekly"
+#   ]
+#   "monthly": [
+#       "asaas_theme.tasks.monthly"
+#   ]
 # }
 
 # Testing
@@ -132,6 +132,6 @@ boot_session = "asaas_theme.startup.boot.boot_session"
 # ------------------------------
 #
 # override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "asaas_theme.event.get_events"
+#   "frappe.desk.doctype.event.event.get_events": "asaas_theme.event.get_events"
 # }
 
