@@ -14,7 +14,7 @@ body{
 
 .content.page-container[id="page-desktop"] > div:first-child{
     height: fit-content;
-    padding-top: calc(100px + 3%)!important;
+    padding-top: 110px!important;
 }
 
 .content.page-container[id="page-desktop"] #icon-grid{
@@ -30,7 +30,7 @@ body{
     flex-direction: column;
     justify-content:center;
     flex-flow:wrap;
-    max-width: 770px!important;
+    max-width: 703px!important;
 }
 
 .app-icon i{
@@ -43,8 +43,15 @@ body{
 .app-icon{
     background-color: white!important;
     border-radius:10px;
-    min-width: 106px;
-    min-height: 106px;
+    min-width: 89px;
+    min-height: 89px;
+    width: 89px;
+    height: 89px;
+    padding: 10px;
+    left: 0;
+    right: 0;
+    position: absolute;
+
 }
 .app-icon .inner{
     font-size: 70px;
@@ -56,10 +63,14 @@ body{
     
 }
 .case-wrapper{
-    width: 112px;
+    width: 89px;
     margin-bottom: 5px;
-    margin: 10px 2px;
-    height: 140px!important;
+    margin: 10px 7.5px;
+    height: 116px;
+    position: relative;
+}
+.case-wrapper:hover{
+    cursor: pointer;
 }
 
 #icon-grid{
@@ -70,6 +81,10 @@ body{
     color: #2d6482;
     text-shadow:none;
     font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 body[data-route=""] .navbar-default, body[data-route="desktop"] .navbar-default{

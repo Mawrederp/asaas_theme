@@ -542,7 +542,7 @@ header .navbar-fixed-top .avatar-small .avatar-frame{
 
 }
 .page-body .page-content{
-    margin-top:80px;
+    margin-top:100px;
 }
 .page-title .indicator{
     position: relative;
@@ -599,6 +599,7 @@ input[type="checkbox"]{
 
 #primary-sidebar{
     position: fixed;
+    direction: rtl;
     height: 100%;
     width: 18vw;
     left: 0;
@@ -614,6 +615,7 @@ input[type="checkbox"]{
 .frappe-rtl #primary-sidebar{
     left: auto;
     right: 0;
+    direction: ltr;
 }
 
 .splash img{
@@ -661,6 +663,8 @@ header .navbar{
     left: auto;
     right: 0;
     padding: 0;
+    min-height: 60px;
+    height: 60px;
 }
 .frappe-rtl header .navbar{
     left: 0;
@@ -684,12 +688,13 @@ header .navbar .container{
 }
 #primary-sidebar .logo{
     padding: 20px 40px;
-
+    max-width: 230px;
+    margin: auto;
 }
 .profile-image{
     background-color: #eef5fa;
-    width: 70%;
-    height: auto;
+    width: 180px;
+    height: 100px;
     margin: 5px auto;
     border-radius: 15px;
 }
@@ -700,7 +705,6 @@ header .navbar .container{
 .profile-image .avatar-small{
     height: 100%;
     width: 100%;
-    max-width: 120px;
     display: block;
     margin: auto;
     max-height: 100px;
@@ -726,6 +730,8 @@ header .navbar .container{
 .sidebar-modules{
     padding: 40px;
     padding-top: 10px;
+    max-width:325px;
+    margin:auto;
 }
 
 .sidebar-module,.module-link{
@@ -736,8 +742,6 @@ header .navbar .container{
     border-image: radial-gradient(rgb(30, 33, 32), #edf4f7) 1;
     -moz-border-image:radial-gradient(rgb(30, 33, 32), #edf4f7) 1;
     -o-border-image:radial-gradient(rgb(30, 33, 32), #edf4f7) 1;
-
-
 }
 
 .sidebar-module:hover,.module-link:hover,
