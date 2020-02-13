@@ -295,7 +295,7 @@ frappe.ui.toolbar.Toolbar = frappe.ui.toolbar.Toolbar.extend({
 		let profile_image = $('#primary-sidebar .profile-image');
 		let frappe_user_info = frappe.user_info();
 		let department = frappe.boot.user_department;
-		profile_image.html(frappe.avatar());
+		profile_image.html(`<img src="${frappe.user.image()}">`);
 
 		user_info.html('');
 		if(frappe_user_info.fullname){

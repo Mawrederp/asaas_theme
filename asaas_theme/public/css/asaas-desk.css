@@ -147,11 +147,19 @@ body[data-route=""] header .navbar > .container,.page-head{
     padding: 0!important;
 }
 
-
+.profile-image{
+    position: relative;
+}
 .profile-image .avatar-small .standard-image{
     padding: 40% 0;
 }
+.profile-image img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
 
+}
 .layout-side-section ul:not(.dropdown-menu){
     display: inline-flex;
     vertical-align: middle;
