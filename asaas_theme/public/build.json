@@ -3,7 +3,8 @@
         "public/html/navbar.html",
         "public/html/page.html",
         "public/html/list_sidebar.html",
-        "public/html/edit_filter.html"
+        "public/html/edit_filter.html",
+        "public/html/desktop_module_icon"
         
     ]
 }

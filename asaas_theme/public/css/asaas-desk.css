@@ -626,3 +626,15 @@ span.checked-items-status.text-ellipsis.text-muted.small.hidden-xs.hidden-sm{
     width: 18px;
     height: 22px;
 }
+
+
+.circle{
+    right: 0;
+    left: unset;
+}
+
+
+.frappe-rtl .circle{
+    left: 0;
+    right: unset;
+}
