@@ -957,3 +957,42 @@ frappe.ui.Page = frappe.ui.Page.extend({
 		this.wrapper.trigger('view-change');
 	},
 });
+
+
+frappe.desktop.render = function() {
+		var me = this;
+		frappe.utils.set_title(__("Desktop"));
+		console.log("hello")
+
+		var template = frappe.list_desktop ? "desktop_list_view" : "desktop_icon_grid";
+
+		var all_icons = frappe.get_desktop_icons();
+		var explore_icon = {
+			module_name: 'Explore',
+			label: 'Explore',
+			_label: __('Explore'),
+			_id: 'Explore',
+			_doctype: '',
+			icon: 'octicon octicon-telescope',
+			color: '#7578f6',
+			link: 'modules'
+		};
+		explore_icon.app_icon = frappe.ui.app_icon.get_html(explore_icon);
+		all_icons.push(explore_icon);
+
+		frappe.desktop.wrapper.html(frappe.render_template(template, {
+			// all visible icons
+			desktop_items: all_icons,
+		}));
+
+		frappe.desktop.setup_module_click();
+
+		// notifications
+		frappe.desktop.show_pending_notifications();
+		$(document).on("notification-update", function() {
+			me.show_pending_notifications();
+		});
+
+		$(document).trigger("desktop-render");
+
+	}

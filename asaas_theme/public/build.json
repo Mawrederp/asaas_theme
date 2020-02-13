@@ -4,7 +4,8 @@
         "public/html/page.html",
         "public/html/list_sidebar.html",
         "public/html/edit_filter.html",
-        "public/html/desktop_module_icon"
+        "public/html/desktop_icon_grid.html",
+        "public/html/desktop_module_icon.html"
         
     ]
 }
