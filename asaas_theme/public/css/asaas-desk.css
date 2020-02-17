@@ -160,6 +160,8 @@ body[data-route=""] header .navbar > .container,.page-head{
 .layout-side-section ul:not(.dropdown-menu){
     display: inline-flex;
     vertical-align: middle;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .layout-side-section .list-sidebar {
@@ -634,4 +636,8 @@ span.checked-items-status.text-ellipsis.text-muted.small.hidden-xs.hidden-sm{
 .frappe-rtl .circle{
     left: 0;
     right: unset;
+}
+
+.layout-side-section .form-attachments{
+    margin-bottom: 5px;
 }
