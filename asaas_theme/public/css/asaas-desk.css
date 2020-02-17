@@ -638,6 +638,6 @@ span.checked-items-status.text-ellipsis.text-muted.small.hidden-xs.hidden-sm{
     right: unset;
 }
 
-.layout-side-section .form-attachments{
+.layout-side-section .form-attachments li{
     margin-bottom: 5px;
 }
