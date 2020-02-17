@@ -639,5 +639,5 @@ span.checked-items-status.text-ellipsis.text-muted.small.hidden-xs.hidden-sm{
 }
 
 .layout-side-section .form-attachments li{
-    margin-bottom: 5px;
+    margin-bottom: 5px!important;
 }
