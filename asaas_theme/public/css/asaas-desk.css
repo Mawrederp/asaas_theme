@@ -38,7 +38,9 @@ body{
     border:2px solid #f79c42;
     border-radius: 50px;
     padding: 15px;
-    min-width:62px;
+    width:100%;
+    height:100%;
+
 }
 .app-icon{
     background-color: white!important;
@@ -640,4 +642,21 @@ span.checked-items-status.text-ellipsis.text-muted.small.hidden-xs.hidden-sm{
 
 .layout-side-section .form-attachments li{
     margin-bottom: 5px!important;
+}
+
+body::-webkit-scrollbar {
+    width: 0.2em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #ffb13b;
+  outline: 1px solid #ffb13b;
+}
+
+html{
+    overflow-x: unset;
 }

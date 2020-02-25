@@ -4,7 +4,7 @@
     background: -webkit-linear-gradient(90deg, rgba(22,111,174,1) 0%, rgba(30,123,187,1) 50%, rgba(37,133,199,1) 100%);
     background: linear-gradient(90deg, rgba(22,111,174,1) 0%, rgba(30,123,187,1) 50%, rgba(37,133,199,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#166fae",endColorstr="#2585c7",GradientType=1);
-    height: 60px;
+    height: 50px;
 }
 .page-head .container{
     margin-top: 5px;
