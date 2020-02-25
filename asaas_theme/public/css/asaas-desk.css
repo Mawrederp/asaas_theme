@@ -645,7 +645,7 @@ span.checked-items-status.text-ellipsis.text-muted.small.hidden-xs.hidden-sm{
 }
 
 body::-webkit-scrollbar {
-    width: 0.2em;
+    width: 0.5em;
 }
  
 body::-webkit-scrollbar-track {
