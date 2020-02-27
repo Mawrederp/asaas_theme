@@ -93,6 +93,7 @@ body[data-route=""] .navbar-default, body[data-route="desktop"] .navbar-default{
 .page-title .title-text{
     margin-right: 10px;
     max-width: fit-content;
+    margin-top: -6px;
 }
 
 .page-title .title-text:empty{
@@ -585,7 +586,7 @@ span.checked-items-status.text-ellipsis.text-muted.small.hidden-xs.hidden-sm{
     -ms-transform:rotate(0);
     -webkit-transform:rotate(0);
     transform:rotate(0);
-    top:3px;
+    top:0px;
 }
 .set-filters{
     display: flex;
@@ -655,8 +656,4 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #ffb13b;
   outline: 1px solid #ffb13b;
-}
-
-html{
-    overflow-x: unset;
 }

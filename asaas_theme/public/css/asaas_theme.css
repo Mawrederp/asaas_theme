@@ -261,7 +261,7 @@ body[data-route*="Form/"] .layout-main-section{
     border: none;
 }
 #navbar-breadcrumbs{
-    margin-top: 6px;
+    margin-top: 2px;
     font-size: 24px;
 }
 
@@ -290,7 +290,7 @@ body[data-route*="Form/"] .layout-main-section{
 .frappe-rtl .page-title .title-text:before {
     margin-right: auto;
     margin-left: 10px;
-    top: 6px;
+    top: 0px;
     -ms-transform:rotate(180deg);     /* Internet Explorer 9 */
     -webkit-transform:rotate(180deg); /* Chrome, Safari, Opera */
     transform:rotate(180deg);         /* Standard syntax */
