@@ -243,11 +243,11 @@ body[data-route=""] header .navbar > .container,.page-head{
 
 .frappe-rtl .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand.toggle-sidebar-btn{
     margin-left: 0!important;
-    margin-right: 10px!important;
+    margin-right: 0!important;
 }
 .navbar-brand.toggle-sidebar-btn img{
-    width: 32px;
-    height: 32px;
+    width: 26px;
+    height: 26px;
 
 }
 
@@ -335,7 +335,7 @@ body{
 @media (max-width: 991px){
     .page-head .page-title h1{
         margin-top:6px;
-        font-size: 24px;
+        font-size: 20px;
     }
 }
 
@@ -368,11 +368,6 @@ body .splash{
 .frappe-rtl .page-title{
     margin-left: 15px;
     margin-right: 0;
-}
-
-.mail-btn{
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 .page-title{
@@ -615,18 +610,22 @@ span.checked-items-status.text-ellipsis.text-muted.small.hidden-xs.hidden-sm{
     margin-top: 9px;
 }
 .navbar-brand{
-    padding-right: 10px;
+    padding-right: 19px;
     padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .frappe-rtl .navbar-brand{
     padding-right: 20px;
-    padding-left: 10px;
+    padding-left: 19px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .dropdown-navbar-new-comments a img{
-    width: 18px;
-    height: 22px;
+    width: 17px;
+    height: 21px;
 }
 
 
@@ -657,3 +656,8 @@ body::-webkit-scrollbar-thumb {
   background-color: #ffb13b;
   outline: 1px solid #ffb13b;
 }
+
+.navbar-form .awesomplete{
+    width: 291px;
+}
+

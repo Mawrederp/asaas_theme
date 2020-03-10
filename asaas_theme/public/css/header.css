@@ -4,14 +4,15 @@
     background: -webkit-linear-gradient(90deg, rgba(22,111,174,1) 0%, rgba(30,123,187,1) 50%, rgba(37,133,199,1) 100%);
     background: linear-gradient(90deg, rgba(22,111,174,1) 0%, rgba(30,123,187,1) 50%, rgba(37,133,199,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#166fae",endColorstr="#2585c7",GradientType=1);
-    height: 50px;
+    height: 60px;
 }
 .page-head .container{
     margin-top: 5px;
 }
 .page-title h1{
-    margin-top: 6px;
+    margin-top: 12px;
     color: white;
+    font-size: 20px;
 }
 #navbar-breadcrumbs a{
     color: white;
@@ -44,20 +45,25 @@
     left: 0;
     right: unset;
     position: absolute;
-    top: 12px;
-    font-size: 15px;
+    top: 9px;
+    bottom: 9px;
+    font-size: 22px;
     font-weight: 500;
 }
 .frappe-rtl .navbar .navbar-search-icon{
-    right: 10px;
+    right: 15px;
     left: unset;
     position: absolute;
-    top: 12px;
-    font-size: 15px;
+    top: 9px;
+    bottom: 9px;
+    font-size: 22px;
     font-weight: 500;
 }
 
 
+header .navbar .form-group-sm .form-control{
+    height: 40px;
+}
 .form-print-wrapper{
     margin-left: calc(18vw - 73px);
     margin-right: 0;
@@ -78,9 +84,53 @@
 }
 
 #navbar-search{
-    width: 70%;
+    width: 100%;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.06);
+    border-radius: 22px;
+    background-color: #eef5f9;
 }
 
 .octicon-search-save:before, .octicon-search:before{
     font-weight: bolder;
+}
+.navbar .dropdown-toggle,.mail-btn{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.dropdown-navbar-new-comments .btn.dropdown-toggle{
+    position: relative;
+}
+.dropdown-navbar-new-comments{
+    margin-top: 21px;
+}
+.mail-btn{
+    margin-top: 20px;
+}
+.dropdown-navbar-new-comments .navbar-new-comments{
+    top: -3px;
+    right: 25px;
+    height: 16px;
+    font-size: 11px;
+    padding: 0px 4px;
+    position: absolute;
+    width: fit-content;
+    font-weight: bolder;
+    
+    min-width: fit-content;
+    min-width: -moz-fit-content;
+    min-width: -webkit-fit-content;
+
+    width:fit-content;
+    width:-moz-fit-content;
+    width:-webkit-fit-content;
+}
+
+.mail-btn img{
+    width: 24px;
+    height: 24px;
+}
+
+.dropdown-navbar-user{
+    top: 11px;
 }

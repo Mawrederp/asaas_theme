@@ -482,31 +482,6 @@ body[data-route*="Form/"] .layout-main-section{
     left: 0;
 }
 
-.dropdown-navbar-new-comments .btn.dropdown-toggle{
-    position: relative;
-}
-.dropdown-navbar-new-comments{
-    margin-top: 7px;
-}
-.dropdown-navbar-new-comments .navbar-new-comments{
-    top: 5px;
-    right: 25px;
-    height: 16px;
-    font-size: 11px;
-    padding: 0px 4px;
-    position: absolute;
-    width: fit-content;
-    font-weight: bolder;
-    
-    min-width: fit-content;
-    min-width: -moz-fit-content;
-    min-width: -webkit-fit-content;
-
-    width:fit-content;
-    width:-moz-fit-content;
-    width:-webkit-fit-content;
-}
-
 header .navbar-fixed-top .dropdown.dropdown-help,
 header .navbar-fixed-top .toolbar-user-fullname{
     display: none;
@@ -535,7 +510,7 @@ header .navbar-fixed-top .avatar-small .avatar-frame{
 }
 
 .page-head{
-    top: 50px;
+    top: 60px;
     box-shadow: 0 3px 4px 2px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow:0 3px 4px 2px rgba(0, 0, 0, 0.1);
     -moz-box-shadow:0 3px 4px 2px rgba(0, 0, 0, 0.1);
@@ -678,8 +653,8 @@ header .navbar{
     left: auto;
     right: 0;
     padding: 0;
-    min-height: 50px;
-    height: 50px;
+    min-height: 60px;
+    height: 60px;
 }
 .frappe-rtl header .navbar{
     left: 0;
@@ -770,29 +745,12 @@ header .navbar .container{
     text-decoration: none;
 }
 
-header .navbar .form-group-sm .form-control{
-    height: 35px;
-}
-
-
 input[id="navbar-search"] + ul{
     top: 38px;
 }
 
 
 
-
-#navbar-search{
-    border-radius: 20px!important;
-}
-
-.frappe-rtl .navbar .navbar-search-icon{
-    top: 10px!important;
-}
-.navbar .navbar-search-icon{
-    top: 10px!important;
-
-}
 
 .sidebar-image-wrapper{
     display: none;
