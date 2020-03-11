@@ -68,15 +68,19 @@
 .btn-primary{
     background-color: #56b85b;
     border-color: #56b85b;
-    font-size: 16px;
+    font-size: 13px;
     border-radius: 12px;
+    width: 53px;
+    font-weight: bolder;
 }
 .btn-default.btn-secondary{
-    font-size: 16px;
+    font-size: 13px;
     border-radius: 12px;
     background-color: #2585c7;
     border-color: #2585c7;
     color: white;
+    width: 53px;
+    text-align: center;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -159,7 +163,7 @@
     border-color:lightgrey;
     font-size: 13px;
     font-weight: bold;
-    padding: 5px 15px;
+    padding: 5px 10px;
     border-radius: 8px;
     -moz-box-shadow:    2px 2px 5px 0px #ccc;
     -webkit-box-shadow: 2px 2px 5px 0px #ccc;
@@ -198,7 +202,8 @@ span.indicator.filterable{
     border-radius: 50px;
     font-size: 14px;
     border-radius:18px;
-    max-width: 76px;
+    min-width: 76px;
+    width: fit-content;
     height: 25px;
     font-size: 10px;
 }
@@ -346,7 +351,8 @@ body[data-route*="Form/"] .layout-main-section{
     z-index: 0;
     position: initial;
     border-radius: 0;
-    min-width: 173px;;
+    min-width: 137px;
+    width: 137px;
 }
 
 .layout-other-section .btn-group.menu-btn-group{
