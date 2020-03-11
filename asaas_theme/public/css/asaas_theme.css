@@ -66,11 +66,11 @@
     background-color: #56b85b;
     border-color: #56b85b;
     font-size: 16px;
-    border-radius: 8px;
+    border-radius: 12px;
 }
 .btn-default.btn-secondary{
     font-size: 16px;
-    border-radius: 8px;
+    border-radius: 12px;
     background-color: #2585c7;
     border-color: #2585c7;
     color: white;
@@ -316,35 +316,37 @@ body[data-route*="Form/"] .layout-main-section{
     color: black;
 }
 
-.page-actions ul.dropdown-menu{
+.layout-other-section ul.dropdown-menu{
     display: block;
     right: 0;
     left: unset;
     max-height: unset;
 }
-.page-actions button.dropdown-toggle{
+.layout-other-section button.dropdown-toggle{
     display: none;
 }
-.frappe-rtl .page-actions ul.dropdown-menu{
+.frappe-rtl .layout-other-section ul.dropdown-menu{
     display: block;
     right: unset;
     left: 0;
+    padding-top: 17px;
+    padding-bottom: 17px;
 }
 
 .layout-other-section{
     top: -30px;
 }
-.layout-other-section .page-actions .btn-group.menu-btn-group{
+.layout-other-section .btn-group.menu-btn-group{
     width: 100%;
 }
-.layout-other-section .page-actions ul.dropdown-menu{
+.layout-other-section ul.dropdown-menu{
     z-index: 0;
     position: initial;
     border-radius: 0;
-    min-width: 185px;
+    min-width: 173px;;
 }
 
-.layout-other-section .page-actions .btn-group.menu-btn-group{
+.layout-other-section .btn-group.menu-btn-group{
     top: 20px;
     left: 0;
     right: unset;
@@ -355,24 +357,22 @@ body[data-route*="Form/"] .layout-main-section{
 .row.layout-main{
     width: 100%;
 }
-.frappe-rtl .layout-other-section .page-actions .btn-group.menu-btn-group{
-    left: unset;
-    right: 14px;
-}
-.layout-other-section .page-actions ul.dropdown-menu li:not(:empty){
+
+.layout-other-section ul.dropdown-menu li:not(:empty){
     border-radius: 8px;
-    margin: 15px 30px;
+    margin: 9px auto;
+    width: 92px;
 }
-.layout-other-section .page-actions ul.dropdown-menu > li >a:hover,
-.layout-other-section .page-actions ul.dropdown-menu > li > a:focus{
+.layout-other-section ul.dropdown-menu > li >a:hover,
+.layout-other-section ul.dropdown-menu > li > a:focus{
     background-color: #a6b2b2;
     color: #408fcc;
     border-radius: 8px;
 }
 
-.layout-other-section .page-actions ul.dropdown-menu li a{
+.layout-other-section ul.dropdown-menu li a{
     color: white;
-    font-size: 12px;
+    font-size: 9px;
     font-weight: bold;
     padding: 13px 5px;
     text-align: center;
@@ -398,29 +398,29 @@ body[data-route*="Form/"] .layout-main-section{
     color: white;
 }
 
-.layout-other-section .page-actions ul.dropdown-menu > li.orange-menu-item >a:hover,
-.layout-other-section .page-actions ul.dropdown-menu > li.orange-menu-item > a:focus{
+.layout-other-section ul.dropdown-menu > li.orange-menu-item >a:hover,
+.layout-other-section ul.dropdown-menu > li.orange-menu-item > a:focus{
     background-color: white;
     color: #f68f35;
     border-radius: 8px;
 }
 
-.layout-other-section .page-actions ul.dropdown-menu > li.green-menu-item >a:hover,
-.layout-other-section .page-actions ul.dropdown-menu > li.green-menu-item > a:focus{
+.layout-other-section ul.dropdown-menu > li.green-menu-item >a:hover,
+.layout-other-section ul.dropdown-menu > li.green-menu-item > a:focus{
     background-color: white;
     color: #56b85b;
     border-radius: 8px;
 }
 
-.layout-other-section .page-actions ul.dropdown-menu > li.yellow-menu-item >a:hover,
-.layout-other-section .page-actions ul.dropdown-menu > li.yellow-menu-item > a:focus{
+.layout-other-section ul.dropdown-menu > li.yellow-menu-item >a:hover,
+.layout-other-section ul.dropdown-menu > li.yellow-menu-item > a:focus{
     background-color: white;
     color: #f9be3c;
     border-radius: 8px;
 }
 
-.layout-other-section .page-actions ul.dropdown-menu > li.grey-menu-item >a:hover,
-.layout-other-section .page-actions ul.dropdown-menu > li.grey-menu-item > a:focus{
+.layout-other-section ul.dropdown-menu > li.grey-menu-item >a:hover,
+.layout-other-section ul.dropdown-menu > li.grey-menu-item > a:focus{
     background-color: white;
     color: #4d6564;
     border-radius: 8px;

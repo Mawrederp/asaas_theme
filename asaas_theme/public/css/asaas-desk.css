@@ -277,16 +277,16 @@ body{
     .page-title{
         right: 0;
     }
-    .page-actions{
+    .layout-other-section{
         position: absolute;
     }
-    .page-actions button.dropdown-toggle{
+    .layout-other-section button.dropdown-toggle{
         display: block;
     }
-    .page-actions ul.dropdown-menu{
+    .layout-other-section ul.dropdown-menu{
         display: none;
     }
-    .open .page-actions ul.dropdown-menu{
+    .open .layout-other-section ul.dropdown-menu{
         display: block;
     }
     .navbar-desk{
@@ -420,11 +420,6 @@ body .splash{
 .frappe-rtl .sort-selector{
     padding-left: 0;
     padding-right: 15px;
-}
-
-.page-actions{
-    margin: auto;
-    width: fit-content;
 }
 
 .btn-group.menu-btn-group{
@@ -695,4 +690,21 @@ a.list-tag-preview.hidden-xs.text-muted{
 }
 .form-inner-toolbar:empty{
     display: none;
+}
+.layout-other-section .btn-group.menu-btn-group{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 80px;
+    width: fit-content;
+}
+.layout-other-section{
+    position: relative;
+}
+
+.layout-other-section .page-actions{
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
 }

@@ -455,6 +455,7 @@ frappe.ui.Page = frappe.ui.Page.extend({
 						</ul>
 					</div>
 					<button class="btn btn-primary btn-sm hide primary-action"></button>
+					</div>
 					<div class="btn-group menu-btn-group hide">
 						<button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown"
 							aria-expanded="false">
@@ -466,7 +467,7 @@ frappe.ui.Page = frappe.ui.Page.extend({
 						<ul class="dropdown-menu" role="menu">
 						</ul>
 					</div>
-				</div>
+					
 				</div>
 					
 				</div>`);
@@ -488,6 +489,7 @@ frappe.ui.Page = frappe.ui.Page.extend({
     <!-- buttons -->
     
     <button class="btn btn-secondary btn-default btn-sm hide"></button>
+	<button class="btn btn-primary btn-sm hide primary-action"></button>
     <div class="btn-group actions-btn-group hide">
         <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown"
             aria-expanded="false">
@@ -498,9 +500,11 @@ frappe.ui.Page = frappe.ui.Page.extend({
         </button>
         <ul class="dropdown-menu" role="menu">
         </ul>
-    </div>
-	<button class="btn btn-primary btn-sm hide primary-action"></button>
-	<div class="btn-group menu-btn-group hide">
+	</div>
+	
+	
+</div>
+<div class="btn-group menu-btn-group hide">
         <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown"
             aria-expanded="false">
             <span class="hidden-xs">
@@ -511,7 +515,6 @@ frappe.ui.Page = frappe.ui.Page.extend({
         <ul class="dropdown-menu" role="menu">
         </ul>
     </div>
-</div>
 				
 				</div>\
 			</div>`);
@@ -543,12 +546,12 @@ frappe.ui.Page = frappe.ui.Page.extend({
 
 		this.btn_primary = this.page_actions.find(".primary-action");
 		this.btn_secondary = this.page_actions.find(".btn-secondary");
+		this.actions_menu = this.wrapper.find(".layout-other-section");
+		this.menu = this.actions_menu.find(".menu-btn-group .dropdown-menu");
+		this.menu_btn_group = this.actions_menu.find(".menu-btn-group");
 
-		this.menu = this.page_actions.find(".menu-btn-group .dropdown-menu");
-		this.menu_btn_group = this.page_actions.find(".menu-btn-group");
-
-		this.actions = this.page_actions.find(".actions-btn-group .dropdown-menu");
-		this.actions_btn_group = this.page_actions.find(".actions-btn-group");
+		this.actions = this.actions_menu.find(".actions-btn-group .dropdown-menu");
+		this.actions_btn_group = this.actions_menu.find(".actions-btn-group");
 
 		this.page_form = $('<div class="page-form row hide"></div>').prependTo(this.main);
 		this.inner_toolbar = $('<div class="form-inner-toolbar"></div>').prependTo(this.main);
