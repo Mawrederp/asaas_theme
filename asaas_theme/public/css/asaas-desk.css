@@ -706,3 +706,7 @@ a.list-tag-preview.hidden-xs.text-muted{
     right: 0;
     text-align: center;
 }
+
+.navbar-nav > li > a{
+    line-height: 25px;
+}
