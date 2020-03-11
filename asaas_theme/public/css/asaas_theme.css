@@ -216,6 +216,7 @@ span.indicator.filterable{
     width: fit-content;
     height: 25px;
     font-size: 10px;
+    margin: auto;
 }
 span.indicator.filterable:hover{
     background-color:#edf2f5;
