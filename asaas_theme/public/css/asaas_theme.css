@@ -850,3 +850,11 @@ html{
     padding-left: 0!important;
     margin-right: 10px;
 }
+
+.indicator::before{
+    margin:2px 0 0 4px;    
+}
+
+.frappe-rtl .indicator::before{
+    margin:2px 4px 0 0px;
+}
