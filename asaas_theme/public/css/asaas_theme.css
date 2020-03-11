@@ -72,6 +72,16 @@
     border-radius: 12px;
     width: 53px;
     font-weight: bolder;
+    min-width: fit-content;
+}
+.btn-primary.btn-danger{
+    background-color: #e41e1e;
+    border-color: #e41e1e;
+}
+.btn-primary.btn-danger:hover,
+.btn-primary.btn-danger:focus{
+    background-color: #e41e1e;
+    border-color: #e41e1e;
 }
 .btn-default.btn-secondary{
     font-size: 13px;
@@ -555,8 +565,8 @@ input[type="checkbox"]{
     margin-left: 13px!important;
 }
 
-.frappe-rtl .list-item input[type="checkbox"]{
-    margin-right: 0!important;
+.list-item input[type="checkbox"]{
+    margin-right: 5px!important;
     margin-left: 5px!important;
 }
 
@@ -587,7 +597,7 @@ input[type="checkbox"]{
 
 #primary-sidebar{
     position: fixed;
-    direction: ltr;
+    direction: rtl;
     height: 100%;
     width: 18vw;
     left: 0;
@@ -604,7 +614,7 @@ input[type="checkbox"]{
 .frappe-rtl #primary-sidebar{
     left: auto;
     right: 0;
-    direction: rtl;
+    direction: ltr;
 }
 
 #primary-sidebar::-webkit-scrollbar {
@@ -857,4 +867,7 @@ html{
 
 .frappe-rtl .indicator::before{
     margin:2px 4px 0 0px;
+}
+input[type="checkbox"]{
+    height: 15px;
 }

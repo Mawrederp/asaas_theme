@@ -525,12 +525,17 @@ span.checked-items-status.text-ellipsis.text-muted.small.hidden-xs.hidden-sm{
     -moz-box-shadow:    2px 2px 5px -1px #ccc;
     -webkit-box-shadow: 2px 2px 5px -1px #ccc;
     box-shadow:         2px 2px 5px -1px #ccc;
-    margin: 10px 0;
+    margin: 10px auto!important;
+    width: fit-content;
+    position: absolute;
+    left: 0;
+    right: 0;
     background-color:cadetblue!important;
     color: white!important;
     font-size: 15px;
     text-align: center;
     cursor: pointer;
+    display: none;
 }
 
 .frappe-rtl .sidebar-menu .badge{
@@ -589,6 +594,7 @@ span.checked-items-status.text-ellipsis.text-muted.small.hidden-xs.hidden-sm{
     -webkit-transform:rotate(0);
     transform:rotate(0);
     top:0px;
+    margin-right: 10px;
 }
 .set-filters{
     display: flex;
@@ -693,7 +699,7 @@ a.list-tag-preview.hidden-xs.text-muted{
     position: absolute;
     left: 0;
     right: 0;
-    top: 80px;
+    top: 70px;
     width: fit-content;
 }
 .layout-other-section{
