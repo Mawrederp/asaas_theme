@@ -6,13 +6,24 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#166fae",endColorstr="#2585c7",GradientType=1);
     height: 60px;
 }
-.page-head .container{
-    margin-top: 5px;
+.page-head .container,
+.page-head .container .row{
+    height: 100%;
 }
 .page-title h1{
-    margin-top: 12px;
     color: white;
     font-size: 20px;
+    height: 100%;
+    margin: 0;
+}
+.page-title,
+.col-md-12.col-sm-12.col-xs-12.page-title,
+.col-md-7.col-sm-8.col-xs-6.page-title{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: fit-content;
+    margin: auto 26px;;
 }
 #navbar-breadcrumbs a{
     color: white;
@@ -136,5 +147,5 @@ header .navbar .form-group-sm .form-control{
 }
 
 #navbar-breadcrumbs > li > a{
-    padding: 9px 15px 10px 0px;
+    padding: 0;
 }
