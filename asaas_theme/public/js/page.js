@@ -139,6 +139,8 @@ frappe.ui.toolbar.Toolbar = frappe.ui.toolbar.Toolbar.extend({
 			overlay_sidebar.find('.dropdown-toggle')
 				.addClass('text-muted').find('.caret')
 				.addClass('hidden-xs hidden-sm');
+			
+			$('.list-tag-preview').parent().hide();
 
 			$('<div class="close-sidebar">').hide().appendTo(layout_side_section).fadeIn();
 

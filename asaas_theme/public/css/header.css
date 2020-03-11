@@ -134,3 +134,7 @@ header .navbar .form-group-sm .form-control{
 .dropdown-navbar-user{
     top: 11px;
 }
+
+#navbar-breadcrumbs > li > a{
+    padding: 9px 15px 10px 0px;
+}

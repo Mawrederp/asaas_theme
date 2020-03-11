@@ -10,7 +10,7 @@
 .frappe-rtl .filter-box .filter-actions a{
     margin-left: 0;
     margin-right: 5px;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .filter-box .filter-actions a{
@@ -194,6 +194,10 @@ span.indicator.filterable{
     width: 100%;
     border-radius: 50px;
     font-size: 14px;
+    border-radius:18px;
+    max-width: 76px;
+    height: 25px;
+    font-size: 10px;
 }
 span.indicator.filterable:hover{
     background-color:#edf2f5;
@@ -203,7 +207,7 @@ span.indicator.filterable:hover{
     float: left;
     height: 10px;
     width: 10px;
-    margin-top:5px;
+    margin-top:2px;
 
 }
 
@@ -262,7 +266,7 @@ body[data-route*="Form/"] .layout-main-section{
 }
 #navbar-breadcrumbs{
     margin-top: 2px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 #navbar-breadcrumbs > li > a:hover, #navbar-breadcrumbs > li > a:focus{
@@ -290,7 +294,7 @@ body[data-route*="Form/"] .layout-main-section{
 .frappe-rtl .page-title .title-text:before {
     margin-right: auto;
     margin-left: 10px;
-    top: 0px;
+    top: 5px;
     -ms-transform:rotate(180deg);     /* Internet Explorer 9 */
     -webkit-transform:rotate(180deg); /* Chrome, Safari, Opera */
     transform:rotate(180deg);         /* Standard syntax */
@@ -814,4 +818,8 @@ html{
 }
 .list_filter.row{
     margin:auto;
+}
+
+.list-item-container{
+    border:0.1px solid #e8ecef;
 }
