@@ -30,6 +30,23 @@ frappe.ui.toolbar.Toolbar = frappe.ui.toolbar.Toolbar.extend({
 			user_info.append(`<h4 id="user-department">${__(department)}</h4>`)
 		}
 
+		profile_image.click(function(){
+			frappe.prompt([
+			{'fieldname': 'user_image', 'fieldtype': 'Attach', 'label': 'User Image', 'reqd': 1}  
+		],
+		function(values){
+				frappe.msgprint("Changing user image...");
+				console.log(values);
+				frappe.db.set_value("User",frappe.session.user,"user_image",values.user_image).then(function(){
+					profile_image.html(`<img src="${values.user_image}">`);
+				});
+		},
+		'Upload New Image',
+		'Upload'
+		)
+		
+		})
+
 
 
 	},
@@ -356,6 +373,22 @@ frappe.ui.toolbar.Toolbar = frappe.ui.toolbar.Toolbar.extend({
 			user_info.append(`<h4 id="user-department">${__(department)}</h4>`)
 		}
 
+		profile_image.click(function(){
+			frappe.prompt([
+			{'fieldname': 'user_image', 'fieldtype': 'Attach', 'label': 'User Image', 'reqd': 1}  
+		],
+		function(values){
+				frappe.msgprint("Changing user image...");
+				console.log(values);
+				frappe.db.set_value("User",frappe.session.user,"user_image",values.user_image).then(function(){
+					profile_image.html(`<img src="${values.user_image}">`);
+				});
+		},
+		'Change Profile Image',
+		'Change Image'
+		)
+		
+		})
 
 
 	},

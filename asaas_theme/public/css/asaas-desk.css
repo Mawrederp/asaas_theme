@@ -607,8 +607,9 @@ span.checked-items-status.text-ellipsis.text-muted.small.hidden-xs.hidden-sm{
 }
 
 .form-section:not(:last-child), .form-inner-toolbar{
-    border-top:1px solid #d1d8dd;
+    border-top: none;
     border-bottom: none;
+    
 }
 
 .form-inner-toolbar{
@@ -715,4 +716,38 @@ a.list-tag-preview.hidden-xs.text-muted{
 
 .navbar-nav > li > a{
     line-height: 25px;
+}
+
+
+.frappe-rtl .activity-date{
+    padding: 15px;
+    padding-left: 0;
+}
+
+.frappe-rtl .activity-date.text-right{
+    text-align: right;
+    direction: ltr;
+}
+
+.frappe-rtl .date-indicator::after{
+    margin: 0 12px 0 12px
+}
+
+.layout-main-section .dropdown-menu{
+    z-index: 1;
+}
+
+
+.frappe-rtl .row-index {
+    text-align: left;
+}
+
+.layout-side-section ul.nav-pills li:not(:empty){
+    padding: 0;
+    margin-top: 5px;
+}
+
+.slick-header.ui-state-default, .slick-headerrow.ui-state-default{
+    border-bottom: 1px solid silver!important;
+    background-color: #f7fafc;
 }

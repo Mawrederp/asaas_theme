@@ -16,17 +16,17 @@
 		</li>
 	{% endif %}
 	<li class="divider"></li>
-	<li class="list-link" data-view="List">
+	<li class="list-link hidden" datwa-view="List">
 		<a class="orange" href="#List/{%= doctype %}/List">{%= __("List") %}</a></li>
-	<li class="hide list-link" data-view="Image">
+	<li class="hide list-link hidden" data-view="Image">
 		<a class="grey" href="#List/{%= doctype %}/Image">{%= __("Images") %}</a></li>
-	<li class="hide list-link" data-view="Gantt">
+	<li class="hide list-link hidden" data-view="Gantt">
 		<a href="#List/{%= doctype %}/Gantt">{%= __("Gantt") %}</a></li>
-	<li class="hide tree-link">
+	<li class="hide tree-link hidden">
 		<a class="yellow" href="#Tree/{%= doctype %}">{%= __("Tree") %}</a></li>
-	<li class="hide list-link" data-view="Calendar">
+	<li class="hide list-link hidden" data-view="Calendar">
 		<a href="#List/{%= doctype %}/Calendar">{%= __("Calendar") %}</a></li>
-	<li class="hide list-link" data-view="Kanban">
+	<li class="hide list-link hidden" data-view="Kanban">
 		<div class="btn-group">
 			<a class="dropdown-toggle orange" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				{{ __("Kanban") }} <span class="caret"></span>
@@ -36,7 +36,7 @@
 			</ul>
 		</div>
 	</li>
-	<li class="hide list-link" data-view="Inbox">
+	<li class="hide list-link hidden" data-view="Inbox">
 		<div class="btn-group">
 			<a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				{{ __("Email Inbox") }} <span class="caret"></span>
@@ -45,7 +45,7 @@
 			</ul>
 		</div>
 	</li>
-	<li class="assigned-to-me">
+	<li class="assigned-to-me hidden">
 		<a class="yellow">{%= __("Assigned To Me") %}</a>
 	</li>
 	{% if(frappe.help.has_help(doctype)) { %}

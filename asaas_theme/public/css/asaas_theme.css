@@ -91,6 +91,7 @@
     color: white;
     width: 53px;
     text-align: center;
+    min-width: fit-content;
 }
 .btn-primary:hover,
 .btn-primary:focus,
