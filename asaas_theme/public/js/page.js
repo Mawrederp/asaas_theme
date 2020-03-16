@@ -20,7 +20,12 @@ frappe.ui.toolbar.Toolbar = frappe.ui.toolbar.Toolbar.extend({
 		let profile_image = $('#primary-sidebar .profile-image');
 		let frappe_user_info = frappe.user_info();
 		let department = frappe.boot.user_department;
-		profile_image.html(`<img src="${frappe.user.image()}">`);
+		let image = frappe.user.image();
+		let image_path = image.split(',');
+		if (image_path.length === 3){
+			image = image_path[1] + ','+ image_path[2];
+		}
+		profile_image.html(`<img src="${image}">`);
 
 		user_info.html('');
 		if(frappe_user_info.fullname){
@@ -37,7 +42,12 @@ frappe.ui.toolbar.Toolbar = frappe.ui.toolbar.Toolbar.extend({
 		function(values){
 				frappe.msgprint("Changing user image...");
 				frappe.db.set_value("User",frappe.session.user,"user_image",values.user_image).then(function(){
-					profile_image.html(`<img src="${values.user_image}">`);
+					let new_image = values.user_image;
+					let new_image_path = new_image.split(',');
+					if (new_image_path.length === 3){
+						new_image = new_image_path[1] + ','+ new_image_path[2];
+					}
+					profile_image.html(`<img src="${values.new_user_image}">`);
 				});
 		},
 		'Upload New Image',
@@ -362,39 +372,6 @@ frappe.ui.toolbar.Toolbar = frappe.ui.toolbar.Toolbar.extend({
 		awesome_bar.setup("#modal-search");
 
 		this.make();
-	},
-	load_sidebar_userinfo: function(){
-		let user_info = $('#primary-sidebar .user-info');
-		let profile_image = $('#primary-sidebar .profile-image');
-		let frappe_user_info = frappe.user_info();
-		let department = frappe.boot.user_department;
-		profile_image.html(`<img src="${frappe.user.image()}">`);
-
-		user_info.html('');
-		if(frappe_user_info.fullname){
-			user_info.append(`<h4 id="user-fullname">${__(frappe_user_info.fullname)}</h4>`)
-		}
-		if(department){
-			user_info.append(`<h4 id="user-department">${__(department)}</h4>`)
-		}
-
-		profile_image.click(function(){
-		var dialog = frappe.prompt([
-			{'fieldname': 'user_image', 'fieldtype': 'Attach Image', 'label': 'User Image', 'reqd': 1}  
-		],
-		function(values){
-				frappe.msgprint("Changing user image...");
-				console.log(values);
-				frappe.db.set_value("User",frappe.session.user,"user_image",values.user_image).then(function(){
-					profile_image.html(`<img src="${values.user_image}">`);
-				});
-		},
-		'Change Profile Image',
-		'Change Image'
-		)		
-		})
-
-
 	},
 	load_sidebar_modules: function(){
 		let sidebar = $('#primary-sidebar .sidebar-modules');
