@@ -32,11 +32,10 @@ frappe.ui.toolbar.Toolbar = frappe.ui.toolbar.Toolbar.extend({
 
 		profile_image.click(function(){
 			frappe.prompt([
-			{'fieldname': 'user_image', 'fieldtype': 'Attach', 'label': 'User Image', 'reqd': 1}  
+			{'fieldname': 'user_image', 'fieldtype': 'Attach Image', 'label': 'User Image', 'reqd': 1}  
 		],
 		function(values){
 				frappe.msgprint("Changing user image...");
-				console.log(values);
 				frappe.db.set_value("User",frappe.session.user,"user_image",values.user_image).then(function(){
 					profile_image.html(`<img src="${values.user_image}">`);
 				});
@@ -88,6 +87,12 @@ frappe.ui.toolbar.Toolbar = frappe.ui.toolbar.Toolbar.extend({
 		// clear all custom menus on page change
 		$(document).on("page-change", function() {
 			$("header .navbar .custom-menu").remove();
+			if (frappe.breadcrumbs.current_page() == ""){
+				frappe.breadcrumbs.all[frappe.breadcrumbs.current_page()] = "الأقسام الرئيسية";
+				frappe.breadcrumbs.update();
+				$(".page-title .title-text").empty();
+				console.log("Hello")
+			}
 		});
 
 		//focus search-modal on show in mobile view
@@ -374,8 +379,8 @@ frappe.ui.toolbar.Toolbar = frappe.ui.toolbar.Toolbar.extend({
 		}
 
 		profile_image.click(function(){
-			frappe.prompt([
-			{'fieldname': 'user_image', 'fieldtype': 'Attach', 'label': 'User Image', 'reqd': 1}  
+		var dialog = frappe.prompt([
+			{'fieldname': 'user_image', 'fieldtype': 'Attach Image', 'label': 'User Image', 'reqd': 1}  
 		],
 		function(values){
 				frappe.msgprint("Changing user image...");
@@ -386,8 +391,7 @@ frappe.ui.toolbar.Toolbar = frappe.ui.toolbar.Toolbar.extend({
 		},
 		'Change Profile Image',
 		'Change Image'
-		)
-		
+		)		
 		})
 
 
