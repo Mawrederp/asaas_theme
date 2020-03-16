@@ -751,3 +751,12 @@ a.list-tag-preview.hidden-xs.text-muted{
     border-bottom: 1px solid silver!important;
     background-color: #f7fafc;
 }
+
+.frappe-rtl .frappe-control[data-fieldtype="Attach"] .attached-file .close{
+    left: 0;
+    right: unset;
+}
+
+body:not([data-route^="Form/"]):not([data-route^="List/"]) .layout-main-section{
+    background-color: white;
+}
