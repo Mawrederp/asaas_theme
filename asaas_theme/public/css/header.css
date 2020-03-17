@@ -22,14 +22,19 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    height: fit-content;
-    margin: auto 26px;;
+    height:fit-content;
+    height:-moz-fit-content;
+    height:-webkit-fit-content;
+    margin: 15px 26px;;
 }
 #navbar-breadcrumbs a{
     color: white;
 }
 #navbar-breadcrumbs > li > a{
     max-width: fit-content;
+    max-width: -moz-fit-content;
+    max-width: -webkit-fit-content;
+
 }
 
 

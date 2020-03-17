@@ -73,6 +73,8 @@
     width: 53px;
     font-weight: bolder;
     min-width: fit-content;
+    min-width: -moz-fit-content;
+    min-width: -webkit-fit-content;
 }
 .btn-primary.btn-danger{
     background-color: #e41e1e;
@@ -92,6 +94,8 @@
     width: 53px;
     text-align: center;
     min-width: fit-content;
+    min-width: -moz-fit-content;
+    min-width: -webkit-fit-content;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -215,6 +219,8 @@ span.indicator.filterable{
     border-radius:18px;
     min-width: 76px;
     width: fit-content;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
     height: 25px;
     font-size: 10px;
     margin: auto;
@@ -244,6 +250,8 @@ input.frappe-control{
 
 .frappe-control{
     min-width: fit-content;
+    min-width: -moz-fit-content;
+    min-width: -webkit-fit-content;
 }
 
 .filter_area .form-control{
@@ -274,6 +282,12 @@ input.form-control{
     -webkit-box-shadow: 2px 2px 5px 0px #ccc;
     box-shadow:         2px 2px 5px 0px #ccc;
 }
+
+.modal-dialog .row.form-section{
+    -moz-box-shadow:    unset;
+    -webkit-box-shadow: unset;
+    box-shadow:         unset;
+}
 .row.form-section:first-child{
     margin: 0;
 }
@@ -285,7 +299,6 @@ body[data-route*="Form/"] .layout-main-section{
     border: none;
 }
 #navbar-breadcrumbs{
-    margin-top: 2px;
     font-size: 20px;
 }
 
@@ -314,7 +327,6 @@ body[data-route*="Form/"] .layout-main-section{
 .frappe-rtl .page-title .title-text:before {
     margin-right: auto;
     margin-left: 10px;
-    top: 5px;
     -ms-transform:rotate(180deg);     /* Internet Explorer 9 */
     -webkit-transform:rotate(180deg); /* Chrome, Safari, Opera */
     transform:rotate(180deg);         /* Standard syntax */

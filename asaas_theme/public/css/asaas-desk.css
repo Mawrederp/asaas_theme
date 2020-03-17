@@ -702,6 +702,8 @@ a.list-tag-preview.hidden-xs.text-muted{
     right: 0;
     top: 70px;
     width: fit-content;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
 }
 .layout-other-section{
     position: relative;
@@ -757,7 +759,7 @@ a.list-tag-preview.hidden-xs.text-muted{
     right: unset;
 }
 
-body:not([data-route^="Form/"]):not([data-route^="List/"]) .layout-main-section{
+body:not([data-route^="Form/"]):not([data-route^="List/"]):not([data-route^="Report/"]) .layout-main-section{
     background-color: white;
 }
 
@@ -765,4 +767,62 @@ body:not([data-route^="Form/"]):not([data-route^="List/"]) .layout-main-section{
     .page-body{
         min-height: calc(100vh - 40px);
     }
+}
+.tree-node-toolbar .btn-default{
+    -moz-box-shadow:unset;
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+}
+
+.page-body .dropdown-menu{
+    z-index: 10;
+}
+
+body[data-route^="Report/"] .form-inner-toolbar,
+body[data-route^="query-report/"] .form-inner-toolbar,
+body[data-route^="Tree/"] .form-inner-toolbar{
+    background-color: #f7fafc;
+}
+
+body[data-route^="Report/"] .layout-main-section,
+body[data-route^="query-report/"] .layout-main-section,
+body[data-route^="Tree/"] .layout-main-section{
+    border: unset;
+    min-height: fit-content!important;
+    padding-bottom: 0!important;
+}
+
+body[data-route^="Report/"] .set-filters,
+body[data-route^="query-report/"] .set-filters,
+body[data-route^="Tree/"] .set-filters{
+    padding-right:0;
+    padding-left:0;
+    
+}
+body[data-route^="Tree/"] .tree.opened{
+    -moz-box-shadow: 2px 2px 5px -1px #ccc;
+    -webkit-box-shadow: 2px 2px 5px -1px #ccc;
+    box-shadow: 2px 2px 5px -1px #ccc;
+
+}
+input[type="checkbox"]{
+    visibility: hidden;
+}
+input[type="checkbox"]:before{
+    background-color: white;
+    padding: 0;
+}
+
+.layout-footer{
+    background-color: white;
+    border: unset;
+    -moz-box-shadow: 2px 2px 5px -1px #ccc;
+    -webkit-box-shadow: 2px 2px 5px -1px #ccc;
+    box-shadow: 2px 2px 5px -1px #ccc;
+}
+
+.btn-group.btn-group-paging .btn-default{
+    -moz-box-shadow: unset;
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
 }
