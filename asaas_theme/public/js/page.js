@@ -20,13 +20,7 @@ frappe.ui.toolbar.Toolbar = frappe.ui.toolbar.Toolbar.extend({
 		let profile_image = $('#primary-sidebar .profile-image');
 		let frappe_user_info = frappe.user_info();
 		let department = frappe.boot.user_department;
-		let image = frappe.user.image();
-		let image_path = image.split(',');
-		if (image_path.length === 3){
-			image = image_path[1] + ','+ image_path[2];
-		}
-		profile_image.html(`<img src="${image}">`);
-
+		
 		user_info.html('');
 		if(frappe_user_info.fullname){
 			user_info.append(`<h4 id="user-fullname">${__(frappe_user_info.fullname)}</h4>`)
@@ -34,7 +28,16 @@ frappe.ui.toolbar.Toolbar = frappe.ui.toolbar.Toolbar.extend({
 		if(department){
 			user_info.append(`<h4 id="user-department">${__(department)}</h4>`)
 		}
-
+		
+		let image = frappe.user.image();
+		if (!image) {
+			return
+		}
+		let image_path = image.split(',');
+		if (image_path.length === 3){
+			image = image_path[1] + ','+ image_path[2];
+		}
+		profile_image.html(`<img src="${image}">`);
 		profile_image.click(function(){
 			frappe.prompt([
 			{'fieldname': 'user_image', 'fieldtype': 'Attach Image', 'label': 'User Image', 'reqd': 1}  

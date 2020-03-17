@@ -345,7 +345,7 @@ body{
 }
 
 .frappe-rtl div.frappe-control input{
-    padding-right: 30px;
+    padding-right: 10px;
 }
 
 body .splash{
@@ -768,7 +768,8 @@ body:not([data-route^="Form/"]):not([data-route^="List/"]):not([data-route^="Rep
         min-height: calc(100vh - 40px);
     }
 }
-.tree-node-toolbar .btn-default{
+.tree-node-toolbar .btn-default,
+.control-input .btn-default{
     -moz-box-shadow:unset;
     -webkit-box-shadow: unset;
     box-shadow: unset;
