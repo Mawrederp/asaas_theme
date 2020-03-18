@@ -817,6 +817,12 @@ body[data-route^="Tree/"] .layout-main-section{
     padding-bottom: 0!important;
 }
 
+body[data-route^="query-report/"] .layout-main-section > div:not(.form-inner):not(.page-form){
+    -moz-box-shadow: 2px 2px 5px -1px #ccc;
+    -webkit-box-shadow: 2px 2px 5px -1px #ccc;
+    box-shadow: 2px 2px 5px -1px #ccc;   
+}
+
 body[data-route^="Report/"] .set-filters,
 body[data-route^="query-report/"] .set-filters,
 body[data-route^="Tree/"] .set-filters{
