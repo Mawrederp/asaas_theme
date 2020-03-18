@@ -331,6 +331,24 @@ body{
     }    
 }
 @media (max-width: 991px){
+    .row.layout-main {
+        width: unset;
+    }
+    body[data-route^="Form"] .page-title h1{
+        margin-top: 0!important;
+    }
+    body .title-text{
+        margin-top: 0!important;
+    }
+    .navbar > .container > .navbar-header{
+        float: right;
+    }
+    .navbar-desk{
+        width: fit-content!important;
+    }
+    .profile-image{
+        width: 80%;
+    }
     .page-head .page-title h1{
         margin-top:6px;
         font-size: 20px;
