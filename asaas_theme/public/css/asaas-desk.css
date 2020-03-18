@@ -335,17 +335,23 @@ body{
         margin-top:6px;
         font-size: 20px;
     }
+    #navbar-breadcrumbs{
+        max-width:fit-content;
+    }
+
+    .dropdown-navbar-new-comments{
+        margin-top: 15px;
+    }
 }
 
 .frappe-rtl .listview-main-section .page-form .octicon-search{
     margin-left: -20px;
     margin-right: 5px;
-
     z-index: 5;
 }
 
 .frappe-rtl div.frappe-control input{
-    padding-right: 10px;
+    padding-right: 25px;
 }
 
 body .splash{

@@ -1,3 +1,67 @@
+frappe.breadcrumbs.update = function(){
+	var breadcrumbs = frappe.breadcrumbs.all[frappe.breadcrumbs.current_page()];
+
+		if(!frappe.visible_modules) {
+			frappe.visible_modules = $.map(frappe.get_desktop_icons(true), (m) => { return m.module_name; });
+		}
+		var $breadcrumbs = $("#navbar-breadcrumbs").empty();
+		if(!breadcrumbs) {
+			$("body").addClass("no-breadcrumbs");
+			return;
+		}
+		$("#navbar-breadcrumbs").append(`<li><a href="desk#">`+__('الأقسام الرئيسية') +`</a></li>`);
+
+		// get preferred module for breadcrumbs, based on sent via module
+		var from_module = frappe.breadcrumbs.get_doctype_module(breadcrumbs.doctype);
+
+		if(from_module) {
+			breadcrumbs.module = from_module;
+		} else if(frappe.breadcrumbs.preferred[breadcrumbs.doctype]!==undefined) {
+			// get preferred module for breadcrumbs
+			breadcrumbs.module = frappe.breadcrumbs.preferred[breadcrumbs.doctype];
+		}
+
+		if(breadcrumbs.module) {
+			if(in_list(["Core", "Email", "Custom", "Workflow", "Print"], breadcrumbs.module)) {
+				breadcrumbs.module = "Setup";
+			}
+
+			if(frappe.get_module(breadcrumbs.module)) {
+				// if module access exists
+				var module_info = frappe.get_module(breadcrumbs.module),
+					icon = module_info && module_info.icon,
+					label = module_info ? module_info.label : breadcrumbs.module;
+
+
+				if(module_info && !module_info.blocked && frappe.visible_modules.includes(module_info.module_name)) {
+					$(repl('<li><a href="#modules/%(module)s">%(label)s</a></li>',
+						{ module: breadcrumbs.module, label: __(label) }))
+						.appendTo($breadcrumbs);
+				}
+			}
+		}
+		if(breadcrumbs.doctype && frappe.get_route()[0]==="Form") {
+			if(breadcrumbs.doctype==="User"
+				&& frappe.user.is_module("Setup")===-1
+				|| frappe.get_doc('DocType', breadcrumbs.doctype).issingle) {
+				// no user listview for non-system managers and single doctypes
+			} else {
+				var route;
+				if(frappe.boot.treeviews.indexOf(breadcrumbs.doctype) !== -1) {
+					var view = frappe.model.user_settings[breadcrumbs.doctype].last_view || 'Tree';
+					route = view + '/' + breadcrumbs.doctype;
+				} else {
+					route = 'List/' + breadcrumbs.doctype;
+				}
+				$(repl('<li><a href="#%(route)s">%(label)s</a></li>',
+					{route: route, label: __(breadcrumbs.doctype)}))
+					.appendTo($breadcrumbs);
+			}
+		}
+		
+		$("body").removeClass("no-breadcrumbs");
+}
+
 frappe.ui.toolbar.Toolbar = frappe.ui.toolbar.Toolbar.extend({
 	init: function() {
 		$('header').append(frappe.render_template("navbar", {
@@ -96,7 +160,7 @@ frappe.ui.toolbar.Toolbar = frappe.ui.toolbar.Toolbar.extend({
 		$(document).on("notification-update", function() {
 			frappe.ui.notifications.update_notifications();
 		});
-
+		
 		// clear all custom menus on page change
 		$(document).on("page-change", function() {
 			$("header .navbar .custom-menu").remove();
@@ -104,7 +168,7 @@ frappe.ui.toolbar.Toolbar = frappe.ui.toolbar.Toolbar.extend({
 				frappe.breadcrumbs.all[frappe.breadcrumbs.current_page()] = "الأقسام الرئيسية";
 				frappe.breadcrumbs.update();
 				$(".page-title .title-text").empty();
-				console.log("Hello")
+				$("#navbar-breadcrumbs").append(`<li><a href="desk#">الأقسام الرئيسية</a></li>`);
 			}
 		});
 

@@ -20,16 +20,16 @@
 	<link rel="shortcut icon" href="{{ favicon or "/assets/frappe/images/favicon.png" }}" type="image/x-icon">
 	<link rel="icon" href="{{ favicon or "/assets/frappe/images/favicon.png" }}" type="image/x-icon">
 	{% for include in include_css -%}
-		<link type="text/css" rel="stylesheet" href="{{ include }}?ver={{ build_version }}">
+	<link type="text/css" rel="stylesheet" href="{{ include }}?ver={{ build_version }}">
 	{%- endfor -%}
-	
+
 </head>
 
 <body>
-	<div class="centered splash" >
+	<div class="centered splash">
 		<img src="{{ splash_image or "/assets/frappe/images/frappe-bird-thin.svg" }}">
 	</div>
-	
+
 
 	<div class="main-section">
 		<div class="col-md-2 col-sm-2 hidden-xs">
@@ -41,59 +41,46 @@
 				</div>
 
 				<div class="profile-image">
-					
+
 				</div>
-		
+
 				<div class="user-info">
 					<h4 id="user-fullname"></h4>
 					<h4 id="user-department"></h4>
 				</div>
-		
+
 				<div class="sidebar-modules">
-					
+
 				</div>
-		
+
 			</div>
 		</div>
 		<div class="col-md-10 col-sm-10 col-xs-12">
 			<header>
-					<div class="page-head">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-12 col-sm-12 col-xs-12 page-title">
-										<!-- title -->
-										<ul class="nav navbar-nav" id="navbar-breadcrumbs">
-												<li><a href="desk#">{{_('الأقسام الرئيسية') }}</a></li>
-										</ul>
-										<h1>
-												<div class="title-image hide hidden-md hidden-lg">
-												</div>
-												<div class="ellipsis title-text"></div>
-												<span class="indicator hide"></span>
-										</h1>
-										
+				<div class="page-head">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12 col-sm-12 col-xs-12 page-title">
+								<!-- title -->
+								<ul class="nav navbar-nav" id="navbar-breadcrumbs">
+									<li><a href="desk#">{{_('الأقسام الرئيسية') }}</a></li>
+								</ul>
+								<h1>
+									<div class="title-image hide hidden-md hidden-lg">
 									</div>
-									
-								</div>
+									<div class="ellipsis title-text"></div>
+									<span class="indicator hide"></span>
+								</h1>
+
 							</div>
+
 						</div>
+					</div>
+				</div>
 			</header>
-			
+
 			<div id="body_div">
-					<div class="desk-page-head page-head">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-7 col-sm-8 col-xs-6 page-title">
-										<ul class="nav navbar-nav" id="navbar-breadcrumbs">
-												<li><a href="desk#">{{_('الأقسام الرئيسية') }}</a></li> </ul>
-										<h1>
-											<div class="title-image hide hidden-md hidden-lg"> </div>
-											<div class="ellipsis title-text"></div> <span class="indicator hide"></span>
-										</h1>
-									</div>
-								</div>
-							</div>
-						</div>
+
 			</div>
 			<footer></footer>
 		</div>
@@ -119,9 +106,9 @@
 
 	</script>
 
-{% for include in include_js %}
+	{% for include in include_js %}
 	<script type="text/javascript" src="{{ include }}?ver={{ build_version }}"></script>
-{% endfor %}
+	{% endfor %}
 	{% include "templates/includes/app_analytics/google_analytics.html" %}
 	{% include "templates/includes/app_analytics/mixpanel_analytics.html" %}
 
