@@ -308,6 +308,7 @@ body{
     body[data-route^="Form"] .page-title .title-text{
         font-size: 24px;
     }
+    
 }
 #navbar-breadcrumbs{
     width: fit-content;
@@ -474,6 +475,16 @@ body .splash{
     }
     .page-title h1{
         padding-right: 0;
+    }
+    header .navbar .container{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .frappe-rtl header .navbar .container{
+        padding-right: 0;
+        padding-left: 0;
+
     }
 }
 .frappe-rtl .page-actions .primary-action{
