@@ -827,3 +827,11 @@ input[type="checkbox"]:before{
     -webkit-box-shadow: unset;
     box-shadow: unset;
 }
+
+.navbar-fixed-top, .navbar-fixed-bottom{
+    z-index: 1080!important;
+}
+
+.page-head{
+    z-index: 1080;
+}
