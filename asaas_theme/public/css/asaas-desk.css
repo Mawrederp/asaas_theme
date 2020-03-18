@@ -865,3 +865,7 @@ input[type="checkbox"]:before{
 .page-head{
     z-index: 1080;
 }
+
+.modal{
+    z-index: 1100;
+}
