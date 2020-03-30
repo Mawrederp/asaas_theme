@@ -539,7 +539,7 @@ frappe.ui.Page = frappe.ui.Page.extend({
 					</div>
 					<button class="btn btn-primary btn-sm hide primary-action"></button>
 					</div>
-					<div class="btn-group menu-btn-group hide">
+					<div class="btn-group menu-btn-group origin-menu-btn-group hide">
 						<button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown"
 							aria-expanded="false">
 							<span class="hidden-xs">
@@ -563,16 +563,18 @@ frappe.ui.Page = frappe.ui.Page.extend({
                 </div>\
 				<div class="col-md-3 layout-other-section">
 				<div class="text-right page-actions btn-group menu-btn-group">
-    <!-- ID and icon buttons -->
-    <span class="checked-items-status text-ellipsis text-muted small hide hidden-xs hidden-sm"
-        style="margin-right: 20px;">## items selected</span>
-    <h6 class="ellipsis sub-heading hide text-muted"></h6>
-    <span class="page-icon-group hide hidden-xs hidden-sm"></span>
+	<!-- ID and icon buttons -->
+	<div class="other-actions-btn">
+		<span class="checked-items-status text-ellipsis text-muted small hide hidden-xs hidden-sm"
+			style="margin-right: 20px;">## items selected</span>
+		<h6 class="ellipsis sub-heading hide text-muted"></h6>
+		<span class="page-icon-group hide hidden-xs hidden-sm"></span>
 
-    <!-- buttons -->
-    
-    <button class="btn btn-secondary btn-default btn-sm hide"></button>
-	<button class="btn btn-primary btn-sm hide primary-action"></button>
+		<!-- buttons -->
+		
+		<button class="btn btn-secondary btn-default btn-sm hide"></button>
+		<button class="btn btn-primary btn-sm hide primary-action"></button>
+	</div>
     <div class="btn-group actions-btn-group hide">
         <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown"
             aria-expanded="false">
