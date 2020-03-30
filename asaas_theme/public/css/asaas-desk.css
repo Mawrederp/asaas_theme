@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cairo&display=swap&subset=arabic');
+.case-wrapper@import url('https://fonts.googleapis.com/css?family=Cairo&display=swap&subset=arabic');
 
 body{
     background-color: #f8faff!important;    
@@ -63,7 +63,7 @@ body{
     
 }
 .case-wrapper{
-    width: 89px;
+    width: 95px;
     margin-bottom: 5px;
     margin: 10px 7.5px;
     height: 116px;
