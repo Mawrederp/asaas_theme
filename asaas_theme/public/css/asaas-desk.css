@@ -887,3 +887,29 @@ input[type="checkbox"]:before{
 .modal{
     z-index: 1100;
 }
+
+.other-actions-btn{
+    width: fit-content;
+    margin: auto;
+    justify-content: center;
+}
+
+.btn-group.actions-btn-group{
+
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 100%; */
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+}
+
+.layout-other-section .btn-group.menu-btn-group{
+    position: inherit;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    width: fit-content;
+    top: 0;
+}

@@ -514,16 +514,18 @@ frappe.ui.Page = frappe.ui.Page.extend({
 					<div class="col-md-3 layout-other-section">\
 					
 
-					<div class="text-right page-actions">
+					<div class="text-right page-actions btn-group menu-btn-group">
 					<!-- ID and icon buttons -->
-					<span class="checked-items-status text-ellipsis text-muted small hide hidden-xs hidden-sm"
-						style="margin-right: 20px;">## items selected</span>
-					<h6 class="ellipsis sub-heading hide text-muted"></h6>
-					<span class="page-icon-group hide hidden-xs hidden-sm"></span>
-				
-					<!-- buttons -->
+					<div class="other-actions-btn">
+						<span class="checked-items-status text-ellipsis text-muted small hide hidden-xs hidden-sm"
+							style="margin-right: 20px;">## items selected</span>
+						<h6 class="ellipsis sub-heading hide text-muted"></h6>
+						<span class="page-icon-group hide hidden-xs hidden-sm"></span>
 					
-					<button class="btn btn-secondary btn-default btn-sm hide"></button>
+						<!-- buttons -->
+						
+						<button class="btn btn-secondary btn-default btn-sm hide"></button>
+					</div>
 					<div class="btn-group actions-btn-group hide">
 						<button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown"
 							aria-expanded="false">
@@ -560,7 +562,7 @@ frappe.ui.Page = frappe.ui.Page.extend({
 					<div class="layout-footer hide"></div>\
                 </div>\
 				<div class="col-md-3 layout-other-section">
-				<div class="text-right page-actions">
+				<div class="text-right page-actions btn-group menu-btn-group">
     <!-- ID and icon buttons -->
     <span class="checked-items-status text-ellipsis text-muted small hide hidden-xs hidden-sm"
         style="margin-right: 20px;">## items selected</span>
@@ -585,7 +587,7 @@ frappe.ui.Page = frappe.ui.Page.extend({
 	
 	
 </div>
-<div class="btn-group menu-btn-group hide">
+<div class="btn-group menu-btn-group origin-menu-btn-group  hide">
         <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown"
             aria-expanded="false">
             <span class="hidden-xs">
@@ -628,8 +630,8 @@ frappe.ui.Page = frappe.ui.Page.extend({
 		this.btn_primary = this.page_actions.find(".primary-action");
 		this.btn_secondary = this.page_actions.find(".btn-secondary");
 		this.actions_menu = this.wrapper.find(".layout-other-section");
-		this.menu = this.actions_menu.find(".menu-btn-group .dropdown-menu");
-		this.menu_btn_group = this.actions_menu.find(".menu-btn-group");
+		this.menu = this.actions_menu.find(".menu-btn-group.origin-menu-btn-group .dropdown-menu");
+		this.menu_btn_group = this.actions_menu.find(".menu-btn-group.origin-menu-btn-group");
 
 		this.actions = this.actions_menu.find(".actions-btn-group .dropdown-menu");
 		this.actions_btn_group = this.actions_menu.find(".actions-btn-group");
@@ -773,14 +775,17 @@ frappe.ui.Page = frappe.ui.Page.extend({
 	*/
 	add_dropdown_item: function(label, click, standard, parent) {
 		let item_selector = 'li > a.grey-link';
-
+		console.log("parent")
+		console.log(parent)
+		
 		parent.parent().removeClass("hide");
 		let item_class = ["orange","green","yellow","grey"];
 		let item_id = parent.find('li a.grey-link:not(.visible-xs)').length;
 		
 		var $li = $('<li><a class="grey-link">'+ label +'</a><li>'),
-			$link = $li.find("a").on("click", click);
+		$link = $li.find("a").on("click", click);
 		
+		console.log(item_class[item_id % 4])
 		$li.addClass(item_class[item_id % 4]+"-menu-item")
 
 		if (this.is_in_group_button_dropdown(parent, item_selector, label)) return;
