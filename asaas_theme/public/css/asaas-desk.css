@@ -183,10 +183,13 @@ body[data-route^="Form/"] .layout-side-section ul:not(.dropdown-menu){
     -moz-box-shadow:0 3px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
+body .layout-side-section ul.nav-pills:not(.dropdown-menu){
+    display:inherit;
+    margin-bottom:20px;
+}
 body[data-route^="Form/"] .layout-side-section ul:not(.dropdown-menu) li:not(:empty){
     flex: 1;
 }
-
 .layout-side-section ul:not(.dropdown-menu).module-sidebar-nav{
     display: none;
 }
@@ -912,9 +915,4 @@ input[type="checkbox"]:before{
     display: flex;
     width: fit-content;
     top: 0;
-}
-
-body .layout-side-section ul.nav-pills:not(.dropdown-menu){
-    display:inherit;
-    margin-bottom:20px;
 }
