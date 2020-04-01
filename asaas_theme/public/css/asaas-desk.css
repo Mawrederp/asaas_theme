@@ -913,3 +913,8 @@ input[type="checkbox"]:before{
     width: fit-content;
     top: 0;
 }
+
+body .layout-side-section ul.nav-pills:not(.dropdown-menu){
+    display:inherit;
+    margin-bottom:20px;
+}
